@@ -1,0 +1,325 @@
+[Bootstrap]
+SetupTitle=Installa
+SetupText=Copia dei file in corso. Attendere.
+CabFile=FTControlsManager.CAB
+Spawn=Setup1.exe
+Uninstal=st6unst.exe
+TmpDir=msftqws.pdw
+Cabs=1
+
+[Bootstrap Files]
+File1=@COMCAT.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,6/1/98 12:00:00 AM,22288,4.71.1460.1
+File2=@ASYCFILT.DLL,$(WinSysPathSysFile),,,3/8/99 1:00:00 AM,147728,2.40.4275.1
+File3=@OLEPRO32.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,3/8/99 1:00:00 AM,164112,5.0.4275.1
+File4=@OLEAUT32.DLL,$(WinSysPathSysFile),$(DLLSelfRegister),,4/12/00 1:00:00 AM,598288,2.40.4275.1
+File5=@STDOLE2.TLB,$(WinSysPathSysFile),$(TLBRegister),,6/3/99 1:00:00 AM,17920,2.40.4275.1
+File6=@msvbvm60.dll,$(WinSysPathSysFile),$(DLLSelfRegister),,9/3/02 9:33:38 PM,1394688,6.0.96.90
+File7=@VB6STKIT.DLL,$(WinSysPathSysFile),,,7/15/00 12:00:00 AM,101888,6.0.84.50
+File8=@VB6IT.DLL,$(WinSysPath),,$(Shared),10/2/00 1:00:00 AM,122128,6.0.89.88
+
+[IconGroups]
+Group0=FTControlsManager
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[FTControlsManager]
+Icon1="FTControlsManager.exe"
+Title1=FTControlsManager
+StartIn1=$(AppPath)
+
+[Setup]
+Title=FTControlsManager
+DefaultDir=$(ProgramFiles)\FTControlsManager
+AppExe=FTControlsManager.exe
+AppToUninstall=FTControlsManager.exe
+
+[Setup1 Files]
+File1=@CMCT3IT.DLL,$(WinSysPath),$(DLLSelfRegister),$(Shared),8/5/98 12:00:00 AM,28672,6.0.0.8163
+File2=@COMCT332.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),12/6/00 1:00:00 AM,415176,6.7.0.8988
+File3=@FTControlsManagerConfigurator.exe,$(AppPath),,,9/2/04 5:44:36 PM,1048576,2.4.0.26
+File4=@FTControlsManager.reg,$(AppPath),FTControlsManager.reg,,6/22/04 9:32:02 AM,3808,0.0.0.0
+File5=@Translator.ini,$(AppPath),,,9/9/04 5:45:43 PM,61074,0.0.0.0
+File6=@MDAC_TYP.EXE,$(AppPath),,,2/28/00 12:00:00 AM,7872168,25.0.4403.12
+File7=@ucSplit.ocx,$(WinSysPath),$(DLLSelfRegister),$(Shared),5/20/00 1:58:54 AM,65536,1.0.0.8
+File8=@DATGDIT.DLL,$(WinSysPath),,$(Shared),8/5/98 12:00:00 AM,32768,6.0.81.63
+File9=@STDFTIT.DLL,$(WinSysPath),,$(Shared),8/5/98 12:00:00 AM,6656,6.0.81.63
+File10=@msstdfmt.dll,$(WinSysPath),$(DLLSelfRegister),$(Shared),4/5/01 10:43:20 AM,118784,6.0.88.4
+File11=@MSDATGRD.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),12/6/00 1:00:00 AM,262328,6.0.89.88
+File12=@tdbgpp7.dll,$(WinSysPath),,$(Shared),7/19/01 8:13:00 AM,489128,7.0.24.7
+File13=@todgub7.dll,$(WinSysPath),$(DLLSelfRegister),$(Shared),8/24/00 7:00:00 AM,238072,7.0.0.11
+File14=@todg7.ocx,$(WinSysPath),$(DLLSelfRegister),$(Shared),1/10/02 10:30:00 AM,983040,7.0.0.282
+File15=@CMDLGIT.DLL,$(WinSysPath),,$(Shared),8/5/98 12:00:00 AM,33792,6.0.81.63
+File16=@comdlg32.ocx,$(WinSysPath),$(DLLSelfRegister),$(Shared),5/22/00 1:00:00 AM,140488,6.0.84.18
+File17=@MSCOMIT.DLL,$(WinSysPath),,$(Shared),8/5/98 12:00:00 AM,13824,6.0.81.63
+File18=@MSCOMM32.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),6/24/98 1:00:00 AM,103744,6.0.81.69
+File19=@MSCH2IT.DLL,$(WinSysPath),,$(Shared),8/5/98 12:00:00 AM,113152,6.0.81.63
+File20=@MSCHRT20.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),5/22/00 1:00:00 AM,1009336,6.0.88.4
+File21=@MSCC2IT.DLL,$(WinSysPath),,$(Shared),8/5/98 12:00:00 AM,63488,6.0.81.63
+File22=@MSCOMCT2.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),9/22/00 3:10:06 PM,647872,6.0.88.4
+File23=@MSCMCIT.DLL,$(WinSysPath),,$(Shared),8/5/98 12:00:00 AM,150528,6.0.81.63
+File24=@MSCOMCTL.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),6/6/02 8:13:00 PM,1077344,6.1.95.45
+File25=@TABCTIT.DLL,$(WinSysPath),,$(Shared),8/5/98 12:00:00 AM,22016,6.0.81.63
+File26=@tabctl32.ocx,$(WinSysPath),$(DLLSelfRegister),$(Shared),12/6/00 1:00:00 AM,209608,6.0.90.43
+File27=@scrrnit.dll,$(WinSysPath),,$(Shared),7/27/01 4:43:12 AM,24626,5.6.0.6626
+File28=@msvcrt.dll,$(WinSysPathSysFile),,,7/19/02 8:34:00 AM,290869,6.1.9359.0
+File29=@scrrun.dll,$(WinSysPath),$(DLLSelfRegister),$(Shared),6/26/01 5:39:42 PM,151601,5.6.0.6626
+File30=@SoftKB.dll,$(WinSysPath),$(DLLSelfRegister),$(Shared),2/9/04 7:09:20 PM,131072,2.0.0.0
+File31=@RegAcces.dll,$(WinSysPath),$(DLLSelfRegister),$(Shared),3/4/03 1:59:03 PM,32768,1.0.0.10
+File32=@Configuratore2_0.dll,$(WinSysPath),$(DLLSelfRegister),$(Shared),23/12/08 9:57:48 AM,24000,2.0.0.6
+File33=@VB5DB.DLL,$(WinSysPath),,$(Shared),6/18/98 1:00:00 AM,89360,6.0.81.69
+File34=@msjtes40.dll,$(WinSysPathSysFile),$(DLLSelfRegister),,7/19/02 8:34:00 AM,241936,4.0.5914.0
+File35=@msrepl40.dll,$(WinSysPathSysFile),,,7/19/02 8:34:00 AM,553232,4.0.6226.0
+File36=@msrd3x40.dll,$(WinSysPathSysFile),$(DLLSelfRegister),,7/19/02 8:34:00 AM,315664,4.0.4325.0
+File37=@msrd2x40.dll,$(WinSysPathSysFile),$(DLLSelfRegister),,7/19/02 8:34:00 AM,422160,4.0.4910.0
+File38=@mswdat10.dll,$(WinSysPathSysFile),,,7/19/02 8:34:00 AM,831760,4.0.3829.2
+File39=@mswstr10.dll,$(WinSysPathSysFile),,,7/19/02 8:34:00 AM,614672,4.0.3829.2
+File40=@expsrv.dll,$(WinSysPathSysFile),,,7/19/02 8:34:00 AM,380688,6.0.72.9414
+File41=@vbajet32.dll,$(WinSysPathSysFile),,,7/19/02 8:34:00 AM,30992,6.0.1.8268
+File42=@msjint40.dll,$(WinSysPathSysFile),,,7/19/02 8:34:00 AM,176400,4.0.2927.2
+File43=@msjter40.dll,$(WinSysPathSysFile),,,7/19/02 8:34:00 AM,53520,4.0.2927.2
+File44=@msjet40.dll,$(WinSysPathSysFile),$(DLLSelfRegister),,7/19/02 8:34:00 AM,1503504,4.0.6218.0
+File45=@dao360.dll,$(MSDAOPath),$(DLLSelfRegister),$(Shared),7/19/02 8:34:00 AM,557328,3.60.3714.5
+File46=@ucTranslator10.dll,$(WinSysPath),$(DLLSelfRegister),$(Shared),9/5/02 5:58:26 PM,49152,1.0.0.0
+File47=@FTControlsManager.exe,$(AppPath),,,9/23/04 8:39:11 AM,3649536,2.4.0.78
+File48=@Alarm.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File49=@Alarm_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File50=@Configura Linee.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File51=@Configura Linee_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File52=@Configurazione ambiente.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File53=@Configurazione ambiente_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File54=@Configurazione.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File55=@Configurazione_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File56=@Connessioni DB.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File57=@Connessioni DB_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File58=@Ctrl.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File59=@Ctrl_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File60=@Dati.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File61=@Dati_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File62=@Dir.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File63=@Dir_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File64=@Disp.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File65=@Disp_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File66=@Esp.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File67=@Esp_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File68=@InOut.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File69=@InOut_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File70=@Lista.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File71=@Lista_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File72=@Product.ICO,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File73=@Product_Sel.ICO,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File74=@ProgTlc.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File75=@ProgTlc_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File76=@Root.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File77=@Root_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File78=@TabDB.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File79=@TabDB_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File80=@Toolbar.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File81=@Toolbar_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File82=@10Fle-H.GIF,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File83=@10flecG.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File84=@10flecG.GIF,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File85=@110Flec.GIF,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File86=@111FlecDown.GIF,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File87=@111FlecUp.GIF,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File88=@111Puce.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File89=@111Puce.GIF,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File90=@Aggiorna32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File91=@Allarme16.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File92=@Allarme48.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File93=@Antares32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File94=@ArchFormati.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File95=@Automatico16.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File96=@Automatico48.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File97=@Back.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File98=@Back.gif,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File99=@BackOriginal.gif,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File100=@Backup32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File101=@BackupPage32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File102=@BackupToDisk48.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File103=@Calib48.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File104=@CambioFor32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File105=@Campionatura.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File106=@CancFor32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File107=@ChangeModTLC.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File108=@CicloGreen.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File109=@CicloRed.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File110=@CodLotto.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File111=@CodUser32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File112=@Conf.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File113=@Config.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File114=@Config48.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File115=@CopiaFor32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File116=@Critical.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File117=@Ctrl32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File118=@Darrow.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File119=@DB32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File120=@DeleteBackup32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File121=@DelSearch.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File122=@DelUsr32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File123=@DescUser32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File124=@Diagnostic.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File125=@DiskToBackup48.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File126=@Disp32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File127=@DOWN.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File128=@DOWNultimo.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File129=@DOWNultimo1.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File130=@Eject.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File131=@EjectConf.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File132=@Emergenza16.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File133=@Emergenza48.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File134=@Exit32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File135=@Exlamation.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File136=@FrecciaDX.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File137=@FrecciaDX1.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File138=@FrecciaDX16.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File139=@FrecciaDX2.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File140=@FrecciaGiu.GIF,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File141=@FrecciaSx.GIF,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File142=@FTicon.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File143=@FTSystem.jpg,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File144=@globo32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File145=@globo48.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File146=@graph32_1.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File147=@graph32_2.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File148=@graph32_3.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File149=@Group.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File150=@Icon1195.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File151=@icotest32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File152=@Information.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File153=@LayoutLine.jpg,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File154=@LedRAc.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File155=@LedRSp.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File156=@LedVAc.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File157=@LedVerdeAc27.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File158=@LedVerdeSp27.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File159=@LedVSp.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File160=@Linee.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File161=@Login32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File162=@Logo3.jpg,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File163=@Logout32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File164=@Mail32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File165=@Manuale48.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File166=@ModificaFor32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File167=@ModifyUsr32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File168=@NewUsr32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File169=@No32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File170=@No48.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File171=@Note32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File172=@Off16.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File173=@Off32.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File174=@Off32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File175=@Off48.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File176=@Off48.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File177=@ParamAlrm.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File178=@ParamTlc.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File179=@Print.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File180=@PrintPreview.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File181=@Pwd32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File182=@Pwd48.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File183=@Question.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File184=@recyling32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File185=@Refresh.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File186=@Restore32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File187=@RiconosciAlrm32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File188=@Save32.gif,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File189=@SaveImage.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File190=@Search.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File191=@Search1.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File192=@Search2.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File193=@Search3.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File194=@SelCtrl32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File195=@SelectRecord.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File196=@Setup.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File197=@SfondoConfig.jpg,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File198=@SfondoMosaico.jpg,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File199=@SfondoPagIniziale.jpg,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File200=@Stand-By16.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File201=@Stand-By48.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File202=@Start.gif,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File203=@Start32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File204=@StatoMac.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File205=@Stop32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File206=@StoricAlrm32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File207=@StoricOperaz32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File208=@StoricProd.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File209=@TaraturaLevel.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File210=@Tel32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File211=@Uarrow.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File212=@UP.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File213=@UPprimo.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File214=@UPprimo1.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File215=@User.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File216=@Users32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File217=@Users48.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File218=@VisualFor32.ICO,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File219=@XRay.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File220=@zoom.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File221=@LevelM.ocx,$(WinSysPath),$(DLLSelfRegister),$(Shared),5/20/00 1:58:54 AM,36536,1.0.0.0
+File222=@Tools.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File223=@Tools.bmp,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File224=@Manut.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File225=@Manut_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File226=@Users32.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File227=@Users32_Sel.ico,$(AppPath)\Graphics\Treeview,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File228=@DirImg32.ico,$(AppPath)\Graphics,,,12/20/04 2:40:56 PM,318,0.0.0.0
+File229=@FormBott.bmp,$(AppPath)\Graphics,,,08/29/06 9:13:05 PM,15,0.0.0.0
+File230=@FormBottNew.bmp,$(AppPath)\Graphics,,,08/29/06 9:13:05 PM,15,0.0.0.0
+File231=@FormBottMod.bmp,$(AppPath)\Graphics,,,08/29/06 9:13:05 PM,15,0.0.0.0
+File232=@FormBottAssocia.bmp,$(AppPath)\Graphics,,,08/29/06 9:13:05 PM,15,0.0.0.0
+File233=@xadb7.OCX,$(WinSysPath),$(DLLSelfRegister),$(Shared),12/6/00 1:00:00 AM,262328,6.0.89.88
+File234=@tdbg7.ocx,$(WinSysPath),$(DLLSelfRegister),$(Shared),12/6/00 1:00:00 AM,262328,6.0.89.88
+File235=@MSWINSCK.ocx,$(WinSysPath),$(DLLSelfRegister),$(Shared),12/6/00 1:00:00 AM,262328,6.0.89.88
+File236=@mbMasterV7.lic,$(WinSysPath),,,01/12/02 2:40:56 PM,4,0.0.0.0
+File237=@mbMasterV7.rtl,$(WinSysPath),,,13/06/99 2:40:56 PM,4,0.0.0.0
+File238=@modbusm.dll,$(WinSysPath),,,05/08/04 2:40:56 PM,88,0.0.0.0
+File239=@mbMasterV7.ocx,$(WinSysPath),$(DLLSelfRegister),$(Shared),05/03/04 1:00:00 AM,52,7.0.0.7
+File240=@NTGraph.ocx,$(WinSysPath),$(DLLSelfRegister),$(Shared),05/03/04 1:00:00 AM,52,1.0.0.1
+File241=@Translator.dll,$(WinSysPath),$(DLLSelfRegister),$(Shared),23/12/08 9:57:48 AM,27000,1.2.0.0
+File242=@LngSplitter.dll,$(WinSysPath),$(DLLSelfRegister),$(Shared),23/12/08 9:57:48 AM,24000,1.0.0.0
+File243=@ModbusCommunicator.ocx,$(WinSysPath),$(DLLSelfRegister),$(Shared),23/12/08 1:00:00 AM,60,1.0.0.1
+File244=@FtXPe_On.bmp,$(AppPath)\Graphics,,,08/29/06 9:13:05 PM,15,0.0.0.0
+File245=@FtXPe_Off.bmp,$(AppPath)\Graphics,,,08/29/06 9:13:05 PM,15,0.0.0.0
+File246=@PictureButton.ocx,$(WinSysPath),$(DLLSelfRegister),$(Shared),23/12/08 1:00:00 AM,60,1.0.0.1
+File247=@vbzip11.dll,$(WinSysPath),,$(Shared),9/5/02 5:58:26 PM,149152,1.0.0.0
+File248=@vbuzip10.dll,$(WinSysPath),,$(Shared),9/5/02 5:58:26 PM,149152,1.0.0.0
+
+
+; Le righe seguenti potrebbero essere eliminate per ottenere spazio 
+; aggiuntivo per la personalizzazione di questo file in un dischetto 
+; per l'installazione completa.
+; 
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+; XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
