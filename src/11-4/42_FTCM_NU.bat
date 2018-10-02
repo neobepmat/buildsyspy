@@ -41,7 +41,7 @@ SET WIXCA_TARGETSPATH=C:\Program Files (x86)\MSBuild\Microsoft\WiX\v3.x\wix.ca.t
 REM cancella i files di LOG
 ECHO Inizializzazione dei files di log 1> %LOG_FILE% 2> %LOG_FILE_ERR%
 
-CALL "%BATCH_FOLDER%\42_FTCM.BAT"
+CALL "%BATCH_FOLDER%\common\42_FTCM.BAT"
 
 REM RIMOZIONE MAPPING TEMPORANEO
 NET USE Z: /DELETE
