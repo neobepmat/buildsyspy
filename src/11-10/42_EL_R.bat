@@ -39,6 +39,7 @@ echo Starting Git Checkout...
 echo ---------------------
 echo Checking out EXTERNALLOGIN solution...
 echo ---------------------
+%DRIVE_GIT_ROOT%
 cd "%GIT-ROOT-COMMON%\ExternalLogin"
 call "%GIT_EXE%" checkout master
 call "%GIT_EXE%" pull
