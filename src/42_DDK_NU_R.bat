@@ -7,7 +7,7 @@ REM =========================================
 
 SET ROOT_MOUNTPOINT=C:\GIT-11-4-beta
 
-SET ROOT_FOLDER=%ROOT_MOUNTPOINT%\FT10-Setup-Sourcetree
+SET ROOT_FOLDER=%ROOT_MOUNTPOINT%\BuildSystem
 
 SET ROOT_MOUNTPOINT_COMMON=c:\GIT-COMMON
 
