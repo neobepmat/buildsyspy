@@ -5,7 +5,6 @@ rem ------------------------------------------------------------------------
 
 SET GIT_EXE=C:\Program Files (x86)\SmartGit\git\bin\git.exe
 set DRIVE_GIT_ROOT=C:
-set GIT_ROOT=C:\git-11-4
 set GIT-ROOT-COMMON=c:\git-common
 set GIT_SOURCETREE=%GIT_ROOT%\FT10-Setup-SourceTree
 set LOCAL_BRANCH_TO_CHECKOUT=master
