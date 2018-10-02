@@ -28,6 +28,22 @@ DEL /Q "%MSI_OUTPUT_FOLDER%\*.*"
 
 MKDIR "%OUTPUT_PATH%"
 
+ECHO Sto effettuando la pull del repository in Git
+
+SET GIT_EXE=C:\Program Files (x86)\Git\cmd\git.exe
+set DRIVE_GIT_ROOT=C:
+set GIT-ROOT-COMMON=c:\git-common
+
+echo Starting Git Checkout...
+
+echo ---------------------
+echo Checking out EXTERNALLOGIN solution...
+echo ---------------------
+cd "%GIT-ROOT-COMMON%\ExternalLogin"
+call "%GIT_EXE%" checkout master
+call "%GIT_EXE%" pull
+call "%GIT_EXE%" status
+
 ECHO Sto effettuando il restore dei pacchetti Nuget
 
 "%BATCH_FOLDER_VERSIONE%\src\bin\nuget.exe" restore "%SOLUTION_FOLDER%"
