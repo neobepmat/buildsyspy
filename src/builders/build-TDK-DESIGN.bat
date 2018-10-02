@@ -10,7 +10,7 @@ SET SLN_TDK=%BATCH_ROOT_MOUNTPOINT%\TheDarkKnight\FTSystem.ControlsManager.sln
 SET PRJ_VB6BRIDGE=%BATCH_ROOT_MOUNTPOINT%\TheDarkKnight\FT.CM.VB6Bridge\FT.CM.VB6Bridge.csproj
 
 REM restoring nuget packages
-"%BATCH_FOLDER_VERSIONE%\nuget.exe" restore "%SLN_TDK%"
+"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SLN_TDK%"
 
 REM CLEAN TDK
 
