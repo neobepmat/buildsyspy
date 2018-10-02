@@ -38,6 +38,9 @@ SET PATH_MSBUILD=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professiona
 SET WIX_TARGETSPATH=C:\Program Files (x86)\MSBuild\Microsoft\WiX\v3.x\wix.targets
 SET WIXCA_TARGETSPATH=C:\Program Files (x86)\MSBuild\Microsoft\WiX\v3.x\wix.ca.targets
 
+REM cancella i files di LOG
+ECHO Inizializzazione dei files di log 1> %LOG_FILE% 2> %LOG_FILE_ERR%
+
 CALL "%BATCH_FOLDER%\42_FTCM.BAT"
 
 REM RIMOZIONE MAPPING TEMPORANEO

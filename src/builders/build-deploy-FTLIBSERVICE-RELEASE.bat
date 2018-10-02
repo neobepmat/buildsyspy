@@ -18,7 +18,7 @@ SET OUTPUT_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\UWFLib.git\UWFLib\bin
 SET FTLIBSERVICE_FOLDER=%BATCH_ROOT_MOUNTPOINT%\BuildSystem\artifacts\FTLibService
 
 ECHO Sto generando la build in RELEASE del pacchetto FTLibService
-ECHO percorso di MSBUILD: %MSBUILD_FOLDER%
+ECHO percorso di MSBUILD: %PATH_MSBUILD%
 
 ECHO Sto effettuando il restore dei pacchetti Nuget
 

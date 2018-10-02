@@ -1,5 +1,3 @@
-REM cancella i files di LOG
-ECHO Inizializzazione dei files di log 1> %LOG_FILE% 2> %LOG_FILE_ERR%
 
 REM GOTO :TEST_ZIP_FEATURE
 
