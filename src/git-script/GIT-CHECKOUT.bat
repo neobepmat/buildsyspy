@@ -58,6 +58,7 @@ echo --------------------------
 echo Checking out TheDarkKnight Setup
 echo --------------------------  
 cd %GIT-ROOT-COMMON%/FT10-Setup  
+call "%GIT_EXE%" reset --hard
 call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status  
@@ -67,6 +68,7 @@ echo --------------------------
 echo Checking out TheDarkKnight DeviceDriver Setup
 echo --------------------------
 cd %GIT-ROOT-COMMON%/FT10Setup-TDKDeviceDriver
+call "%GIT_EXE%" reset --hard
 call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status
