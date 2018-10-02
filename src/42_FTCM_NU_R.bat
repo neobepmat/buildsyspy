@@ -34,7 +34,7 @@ SET WIXCA_TARGETSPATH=C:\Program Files (x86)\MSBuild\Microsoft\WiX\v3.x\wix.ca.t
 IF [%DO_GIT_CHECKOUT%] == 1 (
 	REM effettua il checkout delle branch GIT
 	SET GIT_ROOT=%ROOT_MOUNTPOINT%
-	call "%BATCH_FOLDER%\git-script\GIT-CHECKOUT.bat" %GIT_ROOT% %BRANCH_TO_CHECKOUT% >> %LOG_FILE% 2>> %LOG_FILE_ERR%
+	call "%BATCH_FOLDER%\src\git-script\GIT-CHECKOUT.bat" %GIT_ROOT% %BRANCH_TO_CHECKOUT% >> %LOG_FILE% 2>> %LOG_FILE_ERR%
 )
 
 CALL "%BATCH_FOLDER%\42_FTCM.BAT"
