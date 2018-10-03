@@ -1,6 +1,7 @@
 REM =========================================
 REM 03-07-2018: rilascio non ufficiale: versione per issue UserInterface/Overlord/#67
 SET VERSIONE=11.5.21.1
+SET DEVICE_DRIVER_VERSION=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=TDK11-4
 REM =========================================
@@ -26,7 +27,6 @@ SET LOG_FILE=%BATCH_FOLDER%\log\SETUP_DEVICEDRIVER.LOG
 SET LOG_FILE_ERR=%BATCH_FOLDER%\log\SETUP_DEVICEDRIVER_ERR.LOG
 
 SET TDK_11_4=1
-SET DEVICE_DRIVER_VERSION=%VERSIONE%-develop
 SET PATH_MSBUILD=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBUILD.EXE
 SET WIX_TARGETSPATH=C:\Program Files (x86)\MSBuild\Microsoft\WiX\v3.x\wix.targets
 SET WIXCA_TARGETSPATH=C:\Program Files (x86)\MSBuild\Microsoft\WiX\v3.x\wix.ca.targets

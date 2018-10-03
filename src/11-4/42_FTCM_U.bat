@@ -1,8 +1,10 @@
 REM =========================================
 REM data di rilascio ufficiale 20-09-2018
 SET VERSIONE=11.4.10.1
+SET VERSIONE_WITH_TEXT=%VERSIONE%-master
 SET RILASCIO_UFFICIALE=1
 SET MAIN_TARGET=11-4
+SET STANDALONE=0
 REM =========================================
 
 
@@ -30,9 +32,7 @@ MKDIR "%ROOT_FOLDER%\src\log"
 
 SET LOG_FILE=%ROOT_FOLDER%\src\log\SETUP.LOG
 SET LOG_FILE_ERR=%ROOT_FOLDER%\src\log\SETUP_ERR.LOG
-SET VERSIONE_WITH_TEXT=%VERSIONE%-master
 
-SET STANDALONE=0
 SET VB6_OUTPUT=%BIN_FTCM%\%VERSIONE%
 
 SET PATH_MSBUILD=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBUILD.EXE

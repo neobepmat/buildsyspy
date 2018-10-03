@@ -1,6 +1,7 @@
 REM =========================================
 REM 23-07-2018, rilascio non ufficiale per QCS
-SET VERSIONE=11.5.24.1
+SET VERSIONE=11.11.100.1
+SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
 REM =========================================
@@ -31,7 +32,7 @@ MKDIR "%ROOT_FOLDER%\src\log"
 
 SET LOG_FILE=%ROOT_FOLDER%\src\log\SETUP_11-10_develop.LOG
 SET LOG_FILE_ERR=%ROOT_FOLDER%\src\log\SETUP_ERR_11-10_develop.LOG
-SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
+
 
 SET STANDALONE=0
 SET VB6_OUTPUT=%BIN_FTCM%\%VERSIONE%

@@ -1,6 +1,6 @@
 REM =========================================
 REM 03-07-2018: rilascio non ufficiale: versione per issue UserInterface/Overlord/#67
-SET VERSIONE=11.5.21.1
+SET VERSIONE=11.5.1.1
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================

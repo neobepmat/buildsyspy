@@ -1,5 +1,5 @@
 rem riga lasciata intenzionalmente vuota
-SET VERSIONE=11.4.1.1-develop
+SET VERSIONE=11.5.1.1-develop
 SET DO_GIT_CHECKOUT=1
 SET RILASCIO_UFFICIALE=1
 SET BRANCH_TO_CHECKOUT=develop
