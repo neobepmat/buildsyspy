@@ -1,9 +1,10 @@
 REM =========================================
 REM data di rilascio ufficiale 20-09-2018
 SET VERSIONE=11.4.10.1
+SET RILASCIO_UFFICIALE=1
+SET MAIN_TARGET=11-4
 REM =========================================
 
-SET RILASCIO_UFFICIALE=1
 
 REM CREAZIONE DIRECTORY PER I BINARY PRODOTTI
 

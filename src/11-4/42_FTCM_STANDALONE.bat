@@ -24,6 +24,7 @@ SET VERSIONE=11.4.0.0
 SET VERSIONE_WITH_TEXT=11.4.0.0-standalone
 SET PATH_MSBUILD=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBUILD.EXE
 SET STANDALONE=0
+SET MAIN_TARGET=11-4
 
 REM cancella i files di LOG
 ECHO Inizializzazione dei files di log 1> %LOG_FILE% 2> %LOG_FILE_ERR%

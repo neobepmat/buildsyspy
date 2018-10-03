@@ -1,9 +1,10 @@
 REM =========================================
 REM 23-07-2018, rilascio non ufficiale per QCS
 SET VERSIONE=11.5.24.1
+SET RILASCIO_UFFICIALE=0
+SET MAIN_TARGET=11-4
 REM =========================================
 
-SET RILASCIO_UFFICIALE=0
 
 REM CREAZIONE DIRECTORY PER I BINARY PRODOTTI
 
