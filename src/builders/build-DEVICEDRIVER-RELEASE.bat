@@ -13,6 +13,6 @@ rem ------------------------------------------------------------------------
 
 SET SLN_DEVICEDRIVER=%BATCH_ROOT_MOUNTPOINT_COMMON%\TheDarkKnightDeviceDriver\TheDarkKnightDeviceDriver.sln
 
-"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SLN_DEVICEDRIVER%"
+"%BATCH_FOLDER%\bin\nuget.exe" restore "%SLN_DEVICEDRIVER%"
 
 "%PATH_MSBUILD%" "%SLN_DEVICEDRIVER%" /P:CONFIGURATION=%CONFIGURATION_INTERNAL% /T:Clean,Rebuild /P:PLATFORM=x86
