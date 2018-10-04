@@ -1,8 +1,9 @@
-rem riga lasciata intenzionalmente vuota
+﻿rem riga lasciata intenzionalmente vuota
 SET VERSIONE=11.4.1.1-master
 SET DO_GIT_CHECKOUT=1
 SET RILASCIO_UFFICIALE=1
 SET BRANCH_TO_CHECKOUT=master
+SET BRANCH_TO_CHECKOUT_COMMON=master
 SET CONFIGURATION=Release
 REM =========================================
 
@@ -36,7 +37,7 @@ SET GIT_ROOT=%ROOT_MOUNTPOINT%
 
 IF %DO_GIT_CHECKOUT% == 1 (
 	ECHO ---effettua il checkout delle branch GIT
-	call "%BATCH_FOLDER%\git-script\GIT-CHECKOUT.bat" %GIT_ROOT% %BRANCH_TO_CHECKOUT% >> %LOG_FILE% 2>> %LOG_FILE_ERR%
+	call "%BATCH_FOLDER%\git-script\GIT-CHECKOUT.bat" %GIT_ROOT% %BRANCH_TO_CHECKOUT% %BRANCH_TO_CHECKOUT_COMMON% >> %LOG_FILE% 2>> %LOG_FILE_ERR%
 )
 
 CALL "%BATCH_FOLDER%\common\42_DDK.BAT"

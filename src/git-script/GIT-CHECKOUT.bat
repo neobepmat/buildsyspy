@@ -3,7 +3,12 @@ ECHO "Filename:" %0 1>&2
 SET LOCAL_BRANCH_TO_CHECKOUT=develop
 IF NOT [%BRANCH_TO_CHECKOUT%] == [] SET LOCAL_BRANCH_TO_CHECKOUT=%BRANCH_TO_CHECKOUT%
 
+SET LOCAL_BRANCH_TO_CHECKOUT_COMMON=develop
+IF NOT [%BRANCH_TO_CHECKOUT_COMMON%] == [] SET LOCAL_BRANCH_TO_CHECKOUT_COMMON=%BRANCH_TO_CHECKOUT_COMMON%
+
 rem ------------------------------------------------------------------------
+
+@ECHO Working on specific repo:[%BRANCH_TO_CHECKOUT%] on common repo:[%BRANCH_TO_CHECKOUT_COMMON%]
 
 SET GIT_EXE=C:\Program Files (x86)\Git\cmd\git.exe
 set DRIVE_GIT_ROOT=C:
@@ -48,7 +53,7 @@ echo --------------------------
 echo Checking out TheDarkKnight DeviceDriver
 echo --------------------------
 cd %GIT-ROOT-COMMON%/TheDarkKnightDeviceDriver
-call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT%
+call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status
 cd %DRIVE_GIT_ROOT%
@@ -59,7 +64,7 @@ echo Checking out TheDarkKnight Setup
 echo --------------------------  
 cd %GIT-ROOT-COMMON%/FT10-Setup  
 call "%GIT_EXE%" reset --hard
-call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT%
+call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status  
 cd %DRIVE_GIT_ROOT%
@@ -69,7 +74,7 @@ echo Checking out TheDarkKnight DeviceDriver Setup
 echo --------------------------
 cd %GIT-ROOT-COMMON%/FT10Setup-TDKDeviceDriver
 call "%GIT_EXE%" reset --hard
-call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT%
+call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status
 cd %DRIVE_GIT_ROOT%
@@ -78,7 +83,7 @@ echo --------------------------
 echo Checking out FTSystem Shutdown
 echo --------------------------
 cd %GIT-ROOT-COMMON%/FTSystem.ShutDownPC
-call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT%
+call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status
 cd %DRIVE_GIT_ROOT%
@@ -87,7 +92,7 @@ echo --------------------------
 echo Checking out RDP
 echo --------------------------
 cd %GIT-ROOT-COMMON%/FTSystem.RDP
-call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT%
+call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status
 cd %DRIVE_GIT_ROOT%
@@ -96,7 +101,7 @@ echo -------------------------
 echo Checking out FTSystem Communication Framework
 echo --------------------------
 cd %GIT-ROOT-COMMON%/FTSystemCommunicationFramework
-call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT%
+call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status
 cd %DRIVE_GIT_ROOT%
@@ -105,7 +110,7 @@ echo --------------------------
 echo Checking out UWFLib
 echo --------------------------
 cd %GIT-ROOT-COMMON%/UWFLib.git
-call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT%
+call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status
 cd %DRIVE_GIT_ROOT%
