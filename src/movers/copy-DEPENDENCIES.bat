@@ -92,6 +92,19 @@ copy "%FTCM_FOLDER%\LibUsbHasher.pdb" "%DEPENDENCIES_FOLDER%"
 REM copia in FTCM_FOLDER i files che non vengono rilasciati da nessuna build (oggetti usati in VB6)
 copy "%COMVB6_FOLDER%\Translator.dll" "%FTCM_FOLDER%"
 
-copy "%FTCM_FOLDER%\redbus.dll" "%DEPENDENCIES_FOLDER%"
+copy "%FTCM_FOLDER%\EntityFramework.dll" "%DEPENDENCIES_FOLDER%"
+copy "%FTCM_FOLDER%\EntityFramework.SqlServer.dll" "%DEPENDENCIES_FOLDER%"
+
+copy "%FTCM_FOLDER%\Flee.dll" "%DEPENDENCIES_FOLDER%"
+
+copy "%FTCM_FOLDER%\Newtonsoft.Json.dll" "%DEPENDENCIES_FOLDER%"
+copy "%FTCM_FOLDER%\Newtonsoft.Json.Schema.dll" "%DEPENDENCIES_FOLDER%"
+
+copy "%FTCM_FOLDER%\System.Data.SQLite.dll" "%DEPENDENCIES_FOLDER%"
+copy "%FTCM_FOLDER%\System.Data.SQLite.EF6.dll" "%DEPENDENCIES_FOLDER%"
+copy "%FTCM_FOLDER%\System.Data.SQLite.Linq.dll" "%DEPENDENCIES_FOLDER%"
 xcopy "%FTCM_FOLDER%\x86\*" "%DEPENDENCIES_FOLDER%\X86\" /Y /f
 xcopy "%FTCM_FOLDER%\x64\*" "%DEPENDENCIES_FOLDER%\X64\" /Y /f
+
+rem copia di Redbus
+copy "%FTCM_FOLDER%\Redbus.dll" "%DEPENDENCIES_FOLDER%"
