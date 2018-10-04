@@ -1,6 +1,6 @@
 REM =========================================
-REM 23-07-2018, rilascio non ufficiale per QCS
-SET VERSIONE=11.11.100.1
+REM 04-10-2018, rilascio non ufficiale per RoboQCS
+SET VERSIONE=11.11.100.2
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET DO_GIT_CHECKOUT=1
 SET BRANCH_TO_CHECKOUT=develop

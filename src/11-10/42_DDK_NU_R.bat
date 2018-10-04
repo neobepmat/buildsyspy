@@ -1,5 +1,6 @@
-rem riga lasciata intenzionalmente vuota
-SET VERSIONE=11.5.1.1-develop
+REM =========================================
+REM 04-10-2018, rilascio non ufficiale per RoboQCS
+SET VERSIONE=11.11.100.2-develop
 SET DO_GIT_CHECKOUT=1
 SET RILASCIO_UFFICIALE=1
 SET BRANCH_TO_CHECKOUT=develop
