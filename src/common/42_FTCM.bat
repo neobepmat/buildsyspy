@@ -12,9 +12,9 @@ IF NOT EXIST "%RFID_FOLDER%" MKDIR "%RFID_FOLDER%"
   
 DEL "%BIN_DEPENDENCIES%\*.*" /Q /F 1>> %LOG_FILE% 2>> %LOG_FILE_ERR%
  
-DEL "%BIN_FTCM%\%VERSIONE_WITH_TEXT%\*.*" /Q /F 1>> %LOG_FILE% 2>> %LOG_FILE_ERR%
+DEL "%BIN_FTCM%\%VERSIONE%\*.*" /Q /F 1>> %LOG_FILE% 2>> %LOG_FILE_ERR%
 
-DEL "%BIN_TDK%\%VERSIONE_WITH_TEXT%\*.*" /Q /F 1>> %LOG_FILE% 2>> %LOG_FILE_ERR%
+DEL "%BIN_TDK%\%VERSIONE%\*.*" /Q /F 1>> %LOG_FILE% 2>> %LOG_FILE_ERR%
 
 REM =========================================
 
