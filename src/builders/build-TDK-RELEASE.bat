@@ -5,9 +5,12 @@ IF NOT [%ROOT_MOUNTPOINT%] == [] SET BATCH_ROOT_MOUNTPOINT=%ROOT_MOUNTPOINT%
 
 rem ------------------------------------------------------------------------
 
-SET SLN_TDK=%ROOT_MOUNTPOINT%\TheDarkKnight\FTSystem.ControlsManager.sln
+SET BATCH_FOLDER_VERSIONE=%BATCH_ROOT_MOUNTPOINT%\BuildSystem\src
+SET SLN_TDK=%BATCH_ROOT_MOUNTPOINT%\TheDarkKnight\FTSystem.ControlsManager.sln
+SET PRJ_VB6BRIDGE=%BATCH_ROOT_MOUNTPOINT%\TheDarkKnight\FT.CM.VB6Bridge\FT.CM.VB6Bridge.csproj
 
-SET PRJ_VB6BRIDGE=%ROOT_MOUNTPOINT%\TheDarkKnight\FT.CM.VB6Bridge\FT.CM.VB6Bridge.csproj
+REM restoring nuget packages
+"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SLN_TDK%"
 
 "%PATH_MSBUILD%" "%PRJ_VB6BRIDGE%" /P:CONFIGURATION=Release /T:Clean /P:PLATFORM=x86
 
