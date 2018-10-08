@@ -4,7 +4,8 @@ REM debbono essere utilizzati dopo aver eseguito un setup ufficiale con successo
 
 SET GIT-ROOT=C:\GIT-11-4
 set GIT-ROOT-COMMON=c:\git-common
-SET TAG=v11\11.4.11.1
+:: Warning! Always use the slash forward within the version number - the backslash is not allowed
+SET TAG=v11/11.4.11.1
 :: used to start the task as simulated
 SET DEMO=1 
 SET EXT_LOG_FILE=%GIT-ROOT%\BuildSystem\src\log\GIT-TAG-11-4_MASTER.log
@@ -12,3 +13,5 @@ SET EXT_LOG_FILE_ERR=%GIT-ROOT%\BuildSystem\src\log\GIT-TAG-11-4_MASTER_ERR.log
 SET BRANCH_TO_TAG_INTERNAL=master
 
 CALL "%GIT-ROOT%\BuildSystem\src\git-script\GIT-TAG-MASTER.bat"
+
+PAUSE
