@@ -11,5 +11,7 @@ IF %DEMO% == 1 (
 )
 
 IF %DEMO% == 0 (
+	@ECHO Creating Tag [%TAG%] for repository [%CURRENT_REPO%] branch [%BRANCH_TO_TAG_INTERNAL%]
 	@ECHO call "%GIT_EXE%" -C %CURRENT_FOLDER% tag -a %TAG%  >> "%EXT_LOG_FILE%" 2>>"%EXT_LOG_FILE_ERR%"
+	@ECHO call "%GIT_EXE%" -C %CURRENT_FOLDER% push origin %TAG%  >> "%EXT_LOG_FILE%" 2>>"%EXT_LOG_FILE_ERR%"
 )
