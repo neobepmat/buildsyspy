@@ -22,7 +22,6 @@ EXIT /B
 :sub_YES
 @ECHO The user has chosen YES : the batch file will continue >> "%EXT_LOG_FILE%" 2>>&1
 PAUSE
-EXIT /B
 
 SET GIT_EXE=C:\Program Files (x86)\Git\cmd\git.exe
 
