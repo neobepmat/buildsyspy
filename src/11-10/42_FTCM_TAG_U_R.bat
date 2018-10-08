@@ -10,4 +10,4 @@ SET DEMO=1
 SET EXT_LOG_FILE=%GIT-ROOT%\BuildSystem\src\log\GIT-TAG-11-10_MASTER.log
 SET BRANCH_TO_TAG_INTERNAL=master
 
-CALL "%GIT-ROOT%\BuildSystem\git-script\GIT-TAG-MASTER.bat"
+CALL "%GIT-ROOT%\BuildSystem\src\git-script\GIT-TAG-MASTER.bat"
