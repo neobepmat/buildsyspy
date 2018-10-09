@@ -1,5 +1,6 @@
-rem riga lasciata intenzionalmente vuota
-SET VERSIONE=11.4.1.1
+﻿REM =========================================
+REM data di rilascio ufficiale 09-10-2018
+SET VERSIONE=11.10.1.1
 SET RILASCIO_UFFICIALE=1
 SET CONFIGURATION=Release
 REM =========================================
