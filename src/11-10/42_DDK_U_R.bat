@@ -1,5 +1,6 @@
-﻿rem riga lasciata intenzionalmente vuota
-SET VERSIONE=11.4.1.1-master
+﻿REM =========================================
+REM data di rilascio ufficiale 09-10-2018
+SET VERSIONE=11.10.1.1-master
 SET DO_GIT_CHECKOUT=1
 SET RILASCIO_UFFICIALE=1
 SET BRANCH_TO_CHECKOUT=master-11-10
