@@ -1,6 +1,6 @@
-REM =========================================
-REM 23-07-2018, rilascio non ufficiale per QCS
-SET VERSIONE=11.5.100.1
+﻿REM =========================================
+REM 15-10-2018, rilascio non ufficiale per IE4000
+SET VERSIONE=11.5.102.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-4

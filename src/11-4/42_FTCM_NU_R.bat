@@ -1,6 +1,6 @@
 REM =========================================
-REM 23-07-2018, rilascio non ufficiale per QCS
-SET VERSIONE=11.5.100.1
+REM 15-10-2018, rilascio non ufficiale per IE4000
+SET VERSIONE=11.5.101.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET DO_GIT_CHECKOUT=1
 SET BRANCH_TO_CHECKOUT=develop
