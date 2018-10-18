@@ -37,11 +37,25 @@ SET STAMPVER_DIR=%INTERNAL_ROOT_MOUNTPOINT%\BuildSystem\src\bin\STAMPVER.EXE
 if not exist "%OVERLORD_OUTDIR%" mkdir "%OVERLORD_OUTDIR%"
 if not exist "%OVERLORDCONFIGURATORE_OUTDIR%" mkdir "%OVERLORDCONFIGURATORE_OUTDIR%"
 
-"%VB6PROG%" /make "%OVERLORD_DIR%\FTControlsManager.vbp" /out "%OUT_ERRORLOG_OVERLORD%" /outdir "%OVERLORD_OUTDIR%" 
+"%VB6PROG%" /make "%OVERLORD_DIR%\FTControlsManager.vbp" /out "%OUT_ERRORLOG_OVERLORD%" /outdir "%OVERLORD_OUTDIR%"
+
+@ECHO checking if Overlord executable has been produced....
+IF NOT EXIST "%OVERLORD_OUTDIR%" (
+	@ECHO FTControlsManager not found !
+	SET BUILD_ERROR=1
+	EXIT
+)
 
 "%STAMPVER_DIR%" -f"%VERSIONE_INTERNAL%" "%OVERLORD_FILENAME%"
 
 "%VB6PROG%" /make "%OVERLORD_CONFIGURATORE%\FTControlsManagerConfigurator.vbp" /out "%OUT_ERRORLOG_OVERLORDCONFIGURATORE%" /outdir "%OVERLORDCONFIGURATORE_OUTDIR%"
+
+@ECHO checking if FTControlsManagerConfigurator executable has been produced....
+IF NOT EXIST "%OVERLORDCONFIGURATORE_OUTDIR%" (
+	@ECHO FTControlsManagerConfiguratore not found !
+	SET BUILD_ERROR=1
+	EXIT
+)
 
 "%STAMPVER_DIR%" -f"%VERSIONE_INTERNAL%" "%OVERLORDCONFIGURATORE_FILENAME%"
 
