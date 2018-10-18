@@ -16,6 +16,8 @@ DEL "%BIN_FTCM%\%VERSIONE%\*.*" /Q /F 1>> %LOG_FILE% 2>> %LOG_FILE_ERR%
 
 DEL "%BIN_TDK%\%VERSIONE%\*.*" /Q /F 1>> %LOG_FILE% 2>> %LOG_FILE_ERR%
 
+DEL "C:\FTSYSTEM\BIN\*.*" /Q /F 1>> %LOG_FILE% 2>> %LOG_FILE_ERR%
+
 REM =========================================
 
 :TEST_FTLIBSERVICE_FEATURE
