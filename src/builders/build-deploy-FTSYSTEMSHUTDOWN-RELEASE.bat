@@ -24,7 +24,7 @@ ECHO percorso di MSBUILD: %PATH_MSBUILD%
 
 "%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SOLUTION_FOLDER%"
 
-"%PATH_MSBUILD%" "%SOLUTION_FOLDER%" /target:Clean,Rebuild /p:OutDir="%OUTPUT_FOLDER%";Configuration=Release;Platform=x86 
+"%PATH_MSBUILD%" "%SOLUTION_FOLDER%" /target:Clean,Rebuild /p:OutDir="%OUTPUT_FOLDER%";Configuration=Release;Platform=x86  || SET BUILD_ERROR=1
 
 if not exist "%SETUP_SOURCE_FOLDER%\%SHUTDOWN_FOLDER%" mkdir "%SETUP_SOURCE_FOLDER%\%SHUTDOWN_FOLDER%"
 

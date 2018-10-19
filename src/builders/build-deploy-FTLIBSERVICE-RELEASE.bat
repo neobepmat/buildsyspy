@@ -26,7 +26,7 @@ ECHO Sto effettuando il restore dei pacchetti Nuget
 
 ECHO Sto eseguendo i target Clean e Rebuild della soluzione
 
-"%PATH_MSBUILD%" "%SOLUTION_FOLDER%" /t:Clean,Rebuild /property:Configuration=Release /p:Platform=AnyCPU /p:OutputPath="%OUTPUT_FOLDER%" 
+"%PATH_MSBUILD%" "%SOLUTION_FOLDER%" /t:Clean,Rebuild /property:Configuration=Release /p:Platform=AnyCPU /p:OutputPath="%OUTPUT_FOLDER%" || SET BUILD_ERROR=1
 
 ECHO Creo percorso %FTLIBSERVICE_FOLDER% se non esiste
 if not exist "%FTLIBSERVICE_FOLDER%" mkdir "%FTLIBSERVICE_FOLDER%"

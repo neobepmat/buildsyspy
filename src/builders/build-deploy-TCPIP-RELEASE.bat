@@ -23,7 +23,7 @@ ECHO percorso di MSBUILD: %MSBUILD_FOLDER%
 
 "%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SOLUTION_FOLDER%"
 
-"%PATH_MSBUILD%" "%PROJECT_FOLDER%" /target:Clean,Rebuild /property:Configuration=Release /p:OutputPath="%OUTPUT_FOLDER%" 
+"%PATH_MSBUILD%" "%PROJECT_FOLDER%" /target:Clean,Rebuild /property:Configuration=Release /p:OutputPath="%OUTPUT_FOLDER%"  || SET BUILD_ERROR=1
 
 if not exist "%SETUP_SOURCE_FOLDER%\%TCP_FOLDER%" mkdir "%SETUP_SOURCE_FOLDER%\%TCP_FOLDER%"
 
