@@ -1,6 +1,6 @@
 REM =========================================
-REM 23-07-2018, rilascio non ufficiale per QCS
-SET VERSIONE=11.11.100.1
+REM 25-10-2018, rilascio non ufficiale per RoboQCSSampling
+SET VERSIONE=11.11.101.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
