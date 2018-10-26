@@ -1,5 +1,6 @@
-rem riga lasciata intenzionalmente vuota
-SET VERSIONE=11.5.21.1
+REM =========================================
+REM 26-10-2018, rilascio non ufficiale
+SET VERSIONE=11.5.22.1
 SET DEVICE_DRIVER_VERSION=%VERSIONE%-develop
 SET DO_GIT_CHECKOUT=1
 SET RILASCIO_UFFICIALE=1

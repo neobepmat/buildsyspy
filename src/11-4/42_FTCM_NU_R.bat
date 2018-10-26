@@ -1,6 +1,6 @@
 REM =========================================
-REM 15-10-2018, rilascio non ufficiale per IE4000
-SET VERSIONE=11.5.101.1
+REM 26-10-2018, rilascio non ufficiale
+SET VERSIONE=11.5.102.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET DO_GIT_CHECKOUT=1
 SET BRANCH_TO_CHECKOUT=develop
