@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 16-10-2018, rilascio non ufficiale per IE4000
-SET VERSIONE=11.5.103.1
+REM 05-11-2018, rilascio non ufficiale per sistemazione cambio formato auto
+SET VERSIONE=11.5.105.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-4
