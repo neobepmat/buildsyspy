@@ -1,6 +1,6 @@
 REM =========================================
-REM 03-07-2018: rilascio non ufficiale: versione per issue UserInterface/Overlord/#67
-SET VERSIONE=11.5.21.1
+REM 08-11-2018, rilascio non ufficiale per calibrazione foodLeakTester
+SET VERSIONE=11.5.106.1
 SET DEVICE_DRIVER_VERSION=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=TDK11-4
