@@ -5,7 +5,7 @@ REM debbono essere utilizzati dopo aver eseguito un setup ufficiale con successo
 SET GIT-ROOT=C:\GIT-11-4
 set GIT-ROOT-COMMON=c:\git-common
 :: Warning! Always use the slash forward within the version number - the backslash is not allowed
-SET TAG=v11/11.4.2.1
+SET TAG=v11/11.4.3.1
 :: used to start the task as simulated
 SET DEMO=0
 SET EXT_LOG_FILE=%GIT-ROOT%\BuildSystem\src\log\GIT-TAG_DDK_11-4_MASTER.log
