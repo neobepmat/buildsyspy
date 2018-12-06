@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM data di rilascio ufficiale 04-12-2018
-SET VERSIONE=11.10.5.1
+REM data di rilascio ufficiale 06-12-2018
+SET VERSIONE=11.10.6.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-master
 SET MAIN_TARGET=11-10
 REM =========================================
