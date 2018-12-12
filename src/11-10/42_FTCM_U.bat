@@ -2,10 +2,12 @@
 REM data di rilascio ufficiale 06-12-2018
 SET VERSIONE=11.10.6.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-master
+SET DO_GIT_CHECKOUT=1
+SET BRANCH_TO_CHECKOUT=master-11-10
+SET BRANCH_TO_CHECKOUT_COMMON=master
+SET RILASCIO_UFFICIALE=1
 SET MAIN_TARGET=11-10
 REM =========================================
-
-SET RILASCIO_UFFICIALE=1
 
 REM CREAZIONE DIRECTORY PER I BINARY PRODOTTI
 
@@ -41,6 +43,13 @@ SET WIXCA_TARGETSPATH=C:\Program Files (x86)\MSBuild\Microsoft\WiX\v3.x\wix.ca.t
 
 REM cancella i files di LOG
 ECHO Inizializzazione dei files di log 1> %LOG_FILE% 2> %LOG_FILE_ERR%
+
+SET GIT_ROOT=%ROOT_MOUNTPOINT%
+
+IF %DO_GIT_CHECKOUT% == 1 (
+	REM effettua il checkout delle branch GIT	
+	call "%BATCH_FOLDER%\git-script\GIT-CHECKOUT.bat" %GIT_ROOT% %BRANCH_TO_CHECKOUT% %BRANCH_TO_CHECKOUT_COMMON% >> %LOG_FILE% 2>> %LOG_FILE_ERR%
+)
 
 CALL "%BATCH_FOLDER%\common\42_FTCM.BAT"
 
