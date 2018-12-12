@@ -1,6 +1,6 @@
 REM =========================================
-REM 10-12-2018, rilascio non ufficiale per test Logout automatico
-SET VERSIONE=11.11.105.0
+REM 12-12-2018, rilascio non ufficiale per test Logout automatico
+SET VERSIONE=11.11.106.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
