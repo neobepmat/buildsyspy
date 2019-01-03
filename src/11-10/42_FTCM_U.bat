@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM data di rilascio ufficiale 02-01-2019 - Patch per problema oscilloscopio
-SET VERSIONE=11.10.7.2
+REM data di rilascio ufficiale 03-01-2019 - Patch per problema restore backup FTControlsManager
+SET VERSIONE=11.10.7.3
 SET VERSIONE_WITH_TEXT=%VERSIONE%-master
 SET DO_GIT_CHECKOUT=1
 SET BRANCH_TO_CHECKOUT=master-11-10
