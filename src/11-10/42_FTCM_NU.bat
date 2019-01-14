@@ -1,6 +1,6 @@
 REM =========================================
-REM 12-12-2018, rilascio non ufficiale per test Logout automatico
-SET VERSIONE=11.11.106.0
+REM 14-01-2019, rilascio non ufficiale a tutta manetta - full throttle
+SET VERSIONE=11.11.107.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
