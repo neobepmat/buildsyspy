@@ -1,6 +1,6 @@
 REM =========================================
-REM 25-10-2018, rilascio non ufficiale per RoboQCSSampling
-SET VERSIONE=11.11.101.0-develop
+REM 16-01-2019, rilascio non ufficiale aggiunta firmware 3.46
+SET VERSIONE=11.11.102.0-develop
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================
