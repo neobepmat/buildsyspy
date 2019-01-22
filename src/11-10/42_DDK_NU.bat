@@ -1,6 +1,6 @@
 REM =========================================
-REM 18-01-2019, rilascio non ufficiale aggiunta firmware 3.46 - aggiornate info su JSON - take 001
-SET VERSIONE=11.11.104.1
+REM 22-01-2019, rilascio non ufficiale aggiunta firmware 3.46 - take 002
+SET VERSIONE=11.11.105.1
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================
