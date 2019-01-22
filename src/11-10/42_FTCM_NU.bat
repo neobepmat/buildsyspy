@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 18-01-2019, rilascio non ufficiale a tutta manetta - full throttle - take 006
-SET VERSIONE=11.11.112.1
+REM 22-01-2019, rilascio non ufficiale a tutta manetta - full throttle - take 007 - fix su gestione SupervisorEngine, frmCalibrazione, Tlc
+SET VERSIONE=11.11.113.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
