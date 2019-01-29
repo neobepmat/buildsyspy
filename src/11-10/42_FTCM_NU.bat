@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 28-01-2019, rilascio non ufficiale a tutta manetta - full throttle - take 013 - minor bug fixing
-SET VERSIONE=11.11.119.1
+REM 29-01-2019, rilascio non ufficiale a tutta manetta - full throttle - take 014
+SET VERSIONE=11.11.120.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
