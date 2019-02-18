@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 06-02-2019, rilascio non ufficiale - Test KPI
-SET VERSIONE=11.11.125.1
+REM 18-02-2019, rilascio non ufficiale - prima della tempesta
+SET VERSIONE=11.11.126.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
