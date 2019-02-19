@@ -14,8 +14,11 @@ SET BATCH_FOLDER_VERSIONE=%BATCH_ROOT_MOUNTPOINT%\BuildSystem\src
 SET SETUP_SOURCE_FOLDER=%BATCH_ROOT_MOUNTPOINT%\BuildSystem\artifacts
 SET TCP_FOLDER=TCPIP\4.0.0
 SET DEPENDENCIES_FOLDER=Dependencies
-SET SOLUTION_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\FTSystemCommunicationFramework\Source\FTSystem Communication Framework\FTSystem Communication Framework.sln
-SET PROJECT_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\FTSystemCommunicationFramework\Source\FTSystem Communication Framework\FTSystem.Communication.FTCMMessageDispatcher\FTSystem.Communication.FTCMMessageDispatcher.csproj
+
+SET SOLUTION_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\TheDarkKnightCommunicationFramework\src\TheDarkKnightCommunicationFramework\TheDarkKnightCommunicationFramework.sln
+
+SET PROJECT_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\TheDarkKnightCommunicationFramework\src\TheDarkKnightCommunicationFramework\\FTSystem.Communication.FTCMMessageDispatcher\FTSystem.Communication.FTCMMessageDispatcher.csproj
+
 SET OUTPUT_FOLDER=C:\FTSYSTEM\BIN
 
 ECHO Sto generando la build in RELEASE del pacchetto FTSystem.Communication.FTCMMessageDispatcher
