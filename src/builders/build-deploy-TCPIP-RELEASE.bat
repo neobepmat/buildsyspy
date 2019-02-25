@@ -51,6 +51,10 @@ COPY "%OUTPUT_FOLDER%\FTSystem.Communication.TcpIp.dll" %SETUP_SOURCE_FOLDER%\%D
 COPY "%OUTPUT_FOLDER%\FTSystem.Communication.TcpIp.pdb" %SETUP_SOURCE_FOLDER%\%DEPENDENCIES_FOLDER%
 COPY "%OUTPUT_FOLDER%\FTSystem.Communication.TcpIp.dll.log4net" %SETUP_SOURCE_FOLDER%\%DEPENDENCIES_FOLDER%
 
+rem elenco dei file del progetto da copiare come dipendenze
+rem FTSystem.Communication.CommandContracts.dll
+
+COPY "%OUTPUT_FOLDER%\FTSystem.Communication.CommandContracts.dll" %SETUP_SOURCE_FOLDER%\%DEPENDENCIES_FOLDER%
 
 rem elenco dei file del progetto da copiare nella cartella specifica TCPIP perchè assembly COM visible
 rem FTSystem.Communication.FTCMMessageDispatcher.dll
