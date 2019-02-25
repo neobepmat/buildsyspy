@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 19-02-2019, rilascio non ufficiale - test sgancio FTCMMessageDispatcher
-SET VERSIONE=11.11.127.1
+REM 19-02-2019, rilascio non ufficiale - test sgancio FTCMMessageDispatcher con nuova versione pacchetto FTSystemTCP che supporta nuova e vecchia versione del Dispatcher
+SET VERSIONE=11.11.128.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
