@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 04-03-2019, rilascio non ufficiale - pre-release Ufficiale
-SET VERSIONE=11.11.129.1
+REM 07-03-2019, rilascio non ufficiale - 
+SET VERSIONE=11.11.130.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
