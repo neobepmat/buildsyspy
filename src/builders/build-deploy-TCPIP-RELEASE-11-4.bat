@@ -14,14 +14,11 @@ SET BATCH_FOLDER_VERSIONE=%BATCH_ROOT_MOUNTPOINT%\BuildSystem\src
 SET SETUP_SOURCE_FOLDER=%BATCH_ROOT_MOUNTPOINT%\BuildSystem\artifacts
 SET TCP_FOLDER=TCPIP\4.0.0
 SET DEPENDENCIES_FOLDER=Dependencies
-
-SET SOLUTION_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\TheDarkKnightCommunicationFramework\src\TheDarkKnightCommunicationFramework\TheDarkKnightCommunicationFramework.sln
-
-SET PROJECT_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\TheDarkKnightCommunicationFramework\src\TheDarkKnightCommunicationFramework\\FTSystem.Communication.FTCMMessageDispatcher\FTSystem.Communication.FTCMMessageDispatcher.csproj
-
+SET SOLUTION_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\FTSystemCommunicationFramework\Source\FTSystem Communication Framework\FTSystem Communication Framework.sln
+SET PROJECT_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\FTSystemCommunicationFramework\Source\FTSystem Communication Framework\FTSystem.Communication.FTCMMessageDispatcher\FTSystem.Communication.FTCMMessageDispatcher.csproj
 SET OUTPUT_FOLDER=C:\FTSYSTEM\BIN
 
-ECHO ----------------------- Versione 11.10.x.x --------------------------------------------------
+ECHO ----------------------- Versione 11.4.x.x --------------------------------------------------
 ECHO Sto generando la build in RELEASE del pacchetto FTSystem.Communication.FTCMMessageDispatcher
 ECHO percorso di MSBUILD: %MSBUILD_FOLDER%
 
@@ -52,10 +49,6 @@ COPY "%OUTPUT_FOLDER%\FTSystem.Communication.TcpIp.dll" %SETUP_SOURCE_FOLDER%\%D
 COPY "%OUTPUT_FOLDER%\FTSystem.Communication.TcpIp.pdb" %SETUP_SOURCE_FOLDER%\%DEPENDENCIES_FOLDER%
 COPY "%OUTPUT_FOLDER%\FTSystem.Communication.TcpIp.dll.log4net" %SETUP_SOURCE_FOLDER%\%DEPENDENCIES_FOLDER%
 
-rem elenco dei file del progetto da copiare come dipendenze
-rem FTSystem.Communication.CommandContracts.dll
-
-COPY "%OUTPUT_FOLDER%\FTSystem.Communication.CommandContracts.dll" %SETUP_SOURCE_FOLDER%\%DEPENDENCIES_FOLDER%
 
 rem elenco dei file del progetto da copiare nella cartella specifica TCPIP perchè assembly COM visible
 rem FTSystem.Communication.FTCMMessageDispatcher.dll
