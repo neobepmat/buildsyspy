@@ -1,6 +1,6 @@
 REM =========================================
-REM 12-03-2019, rilascio non ufficiale - adattamento dopo modifiche nuovo Dispatcher e modifiche agli script di BuildSystem
-SET VERSIONE=11.5.108.1
+REM 12-03-2019, rilascio non ufficiale - test modifiche a FT10Setup per copiare i files Aggiornamenti corretti in base alla versione dell'installer
+SET VERSIONE=11.5.109.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-4
