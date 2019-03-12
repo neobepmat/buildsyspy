@@ -1,6 +1,6 @@
-﻿REM =========================================
-REM 08-11-2018, rilascio non ufficiale per calibrazione foodLeakTester
-SET VERSIONE=11.5.106.1
+REM =========================================
+REM 12-03-2019, rilascio non ufficiale - adattamento dopo modifiche nuovo Dispatcher e modifiche agli script di BuildSystem
+SET VERSIONE=11.5.108.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-4

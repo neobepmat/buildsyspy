@@ -1,4 +1,4 @@
-﻿REM =========================================
+REM =========================================
 REM 07-03-2019, rilascio non ufficiale - 
 SET VERSIONE=11.11.130.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
