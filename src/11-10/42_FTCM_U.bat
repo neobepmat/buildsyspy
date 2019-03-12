@@ -1,7 +1,7 @@
 ﻿REM =========================================
-REM data di rilascio ufficiale 29-01-2019 - Rilascio che comprende le modifiche per la desensibilizzazione
+REM data di rilascio ufficiale 06-03-2019 - Rilascio che comprende le modifiche per la desensibilizzazione
 REM nuova manutenzione, controllo dati su calibrazione, cancellazione storico, grafico desensibilizzato per il livello
-SET VERSIONE=11.10.8.1
+SET VERSIONE=11.10.9.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-master
 SET DO_GIT_CHECKOUT=1
 SET BRANCH_TO_CHECKOUT=master-11-10
