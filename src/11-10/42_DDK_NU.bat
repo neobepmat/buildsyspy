@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 24-01-2019, rilascio non ufficiale aggiunta firmware 1.08 EX700MB
-SET VERSIONE=11.11.106.1
+REM 14-03-2019, rilascio non ufficiale - bugfix UserInterface/TheDarkKnight#131
+SET VERSIONE=11.11.107.1
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================

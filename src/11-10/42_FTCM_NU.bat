@@ -1,6 +1,6 @@
 REM =========================================
-REM 07-03-2019, rilascio non ufficiale - 
-SET VERSIONE=11.11.130.1
+REM 14-03-2019, rilascio non ufficiale - bugfix UserInterface/TheDarkKnight#131
+SET VERSIONE=11.11.131.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
