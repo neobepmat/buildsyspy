@@ -1,6 +1,6 @@
 ﻿REM =========================================
 REM 25-03-2019, rilascio non ufficiale - Test EX700MB 1.09
-SET VERSIONE=11.11.109.1
+SET VERSIONE=11.11.110.1
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================
