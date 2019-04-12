@@ -1,6 +1,6 @@
 REM =========================================
-REM 10-04-2019, rilascio non ufficiale - fix http://wiki01:666/UserInterface/Overlord/issues/80
-SET VERSIONE=11.11.134.1
+REM 12-04-2019, rilascio non ufficiale - fix http://wiki01:666/UserInterface/Overlord/issues/81
+SET VERSIONE=11.11.135.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
