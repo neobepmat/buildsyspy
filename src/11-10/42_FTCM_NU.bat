@@ -1,6 +1,6 @@
 REM =========================================
-REM 17-04-2019, rilascio non ufficiale - test Shutdown
-SET VERSIONE=11.11.136.1
+REM 17-04-2019, rilascio non ufficiale - RoboQcsSampling Conveyor
+SET VERSIONE=11.11.137.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
