@@ -1,6 +1,6 @@
 REM =========================================
-REM 02-05-2019, rilascio non ufficiale - test Shutdown dopo ulteriori correzioni e modifiche + rebase su aggiunta Campionatura RoboQcs
-SET VERSIONE=11.11.143.1
+REM 03-05-2019, rilascio non ufficiale - tutto completo - tentativo risoluzione problema Shutdown
+SET VERSIONE=11.11.144.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
