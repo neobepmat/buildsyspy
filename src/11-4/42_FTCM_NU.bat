@@ -1,6 +1,6 @@
 REM =========================================
-REM 03-04-2019, rilascio non ufficiale - bugfix per UserInterface/TheDarkKnight#132
-SET VERSIONE=11.5.110.1
+REM 03-05-2019, aggiunta nuopva versione UWF - unregistering IP Channel
+SET VERSIONE=11.5.111.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-4
