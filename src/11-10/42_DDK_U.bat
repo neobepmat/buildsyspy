@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM data di rilascio ufficiale 29-03-2019
-SET VERSIONE=11.10.8.1
+REM data di rilascio ufficiale 03-05-2019
+SET VERSIONE=11.10.9.1
 SET RILASCIO_UFFICIALE=1
 SET CONFIGURATION=Release
 REM =========================================
