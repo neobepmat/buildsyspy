@@ -1,6 +1,6 @@
 REM =========================================
-REM 03-05-2019, rilascio non ufficiale - tutto completo - tentativo risoluzione problema Shutdown
-SET VERSIONE=11.11.144.1
+REM 08-05-2019, rilascio non ufficiale - bugfix UserInterface/Overlord#77
+SET VERSIONE=11.11.145.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
