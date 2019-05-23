@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 17-05-2019, rilascio non ufficiale - bugfix UserInterface/Overlord#83 
-SET VERSIONE=11.11.146.1
+REM 23-05-2019, rilascio non ufficiale - bugfix WaitMessage RoboQcs
+SET VERSIONE=11.11.147.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
