@@ -1,6 +1,6 @@
-REM =========================================
-REM 03-05-2019, aggiunta nuopva versione UWF - unregistering IP Channel
-SET VERSIONE=11.5.111.1
+﻿REM =========================================
+REM 22-05-2019, Sistemata gestione visualizzazione pulsante calibrazione statistica - Aggiunta gestione visualizzazione per pulsante Acquisizione Immagini
+SET VERSIONE=11.5.112.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-4
