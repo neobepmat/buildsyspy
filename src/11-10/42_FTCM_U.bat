@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM data di rilascio ufficiale 21-05-2019
-SET VERSIONE=11.10.13.2
+REM data di rilascio ufficiale 24-05-2019
+SET VERSIONE=11.10.14.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-master
 SET DO_GIT_CHECKOUT=1
 SET BRANCH_TO_CHECKOUT=master-11-10
