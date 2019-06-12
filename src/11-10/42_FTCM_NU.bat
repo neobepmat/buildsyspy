@@ -1,6 +1,6 @@
 ﻿REM =========================================
 REM 12-06-2019, rilascio non ufficiale - RoboQcs scarto per gruppo misura fallito
-SET VERSIONE=11.11.148.1
+SET VERSIONE=11.11.149.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
