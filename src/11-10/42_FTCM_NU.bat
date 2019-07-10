@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 18-06-2019, rilascio non ufficiale - Test RoboQcsSamplingConveyor con generatore di dati fake attivo
-SET VERSIONE=11.11.150.1
+REM 10-07-2019, rilascio non ufficiale - correzione FTKeybaord per frmCampionatura
+SET VERSIONE=11.11.151.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
