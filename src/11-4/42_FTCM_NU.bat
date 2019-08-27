@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 28-05-2019, Possibile soluzione gestione workflow ciclici per LDS su 2 unità
-SET VERSIONE=11.5.113.1
+REM 26-08-2019, 18-189 Bugfixing su Cambio Formato Automatico
+SET VERSIONE=11.5.114.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-4
