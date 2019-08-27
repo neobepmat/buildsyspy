@@ -1,0 +1,17 @@
+REM Imposta il TAG definito in questo file sui repository MASTER della versione 11.10
+REM IMPORTANTE: questi script non effettuano alcuna PULL e 
+REM debbono essere utilizzati dopo aver eseguito un setup ufficiale con successo
+
+SET GIT-ROOT=Z:\GIT
+set GIT-ROOT-COMMON=Z:\GIT
+:: Warning! Always use the slash forward within the version number - the backslash is not allowed
+SET TAG=v11/11.10.10.1
+:: used to start the task as simulated
+SET DEMO=0 
+SET EXT_LOG_FILE=%GIT-ROOT%\BuildSystem\src\log\GIT-TAG_DDK_11-10_MASTER.log
+SET EXT_LOG_FILE_ERR=%GIT-ROOT%\BuildSystem\src\log\GIT-TAG_DDK_11-10_MASTER_ERR.log
+SET BRANCH_TO_TAG_INTERNAL=master
+
+CALL "%GIT-ROOT%\BuildSystem\src\git-script\GIT-TAG-MASTER-DDK.bat"
+
+PAUSE
