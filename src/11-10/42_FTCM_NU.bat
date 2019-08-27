@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 10-07-2019, rilascio non ufficiale - correzione FTKeybaord per frmCampionatura
-SET VERSIONE=11.11.151.1
+REM 02-08-2019, rilascio non ufficiale - Test PackML RoboQCS per EX700MB
+SET VERSIONE=11.10.153.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
