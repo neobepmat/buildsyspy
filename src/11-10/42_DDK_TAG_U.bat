@@ -2,6 +2,8 @@ REM Imposta il TAG definito in questo file sui repository MASTER della versione 
 REM IMPORTANTE: questi script non effettuano alcuna PULL e 
 REM debbono essere utilizzati dopo aver eseguito un setup ufficiale con successo
 
+NET USE Z: \\VBOXSRV\C_DRIVE
+
 SET GIT-ROOT=Z:\GIT
 set GIT-ROOT-COMMON=Z:\GIT
 :: Warning! Always use the slash forward within the version number - the backslash is not allowed
@@ -13,5 +15,8 @@ SET EXT_LOG_FILE_ERR=%GIT-ROOT%\BuildSystem\src\log\GIT-TAG_DDK_11-10_MASTER_ERR
 SET BRANCH_TO_TAG_INTERNAL=master
 
 CALL "%GIT-ROOT%\BuildSystem\src\git-script\GIT-TAG-MASTER-DDK.bat"
+
+REM RIMOZIONE MAPPING TEMPORANEO
+NET USE Z: /DELETE
 
 PAUSE
