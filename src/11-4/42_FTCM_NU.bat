@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 28-08-2019, 18-189 Bugfixing su Cambio Formato Automatico
-SET VERSIONE=11.5.115.1
+REM 06-09-2019, 19-267 Bugfixing su salvataggio calibrazione Squeezer (C1911)
+SET VERSIONE=11.5.116.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-4
