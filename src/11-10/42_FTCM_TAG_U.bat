@@ -7,7 +7,7 @@ NET USE Z: \\VBOXSRV\C_DRIVE
 SET GIT-ROOT=Z:\GIT
 set GIT-ROOT-COMMON=Z:\GIT
 :: Warning! Always use the slash forward within the version number - the backslash is not allowed
-SET TAG=v11/11.10.17.1
+SET TAG=v11/11.10.18.1
 :: used to start the task as simulated
 SET DEMO=0
 SET EXT_LOG_FILE=%GIT-ROOT%\BuildSystem\src\log\GIT-TAG_FTCM_11-10_MASTER.log
