@@ -1,7 +1,7 @@
 ﻿REM =========================================
-REM 25-09-2019, rilascio non ufficiale - Test1 stazione Ateq RoboQCS per EX700MB
-SET VERSIONE=11.11.155.1
-SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
+REM 02-10-2019, rilascio non ufficiale - Test stazione Ateq RoboQCS per EX700MB
+SET VERSIONE=11.11.156.1
+SET VERSIONE_WITH_TEXT=%VERSIONE%-RoboQcsTestAteq
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
 REM =========================================
