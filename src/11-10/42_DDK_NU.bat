@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 13-09-2019, rilascio non ufficiale - Test EX700MB 1.14
-SET VERSIONE=11.11.114.1
+REM 26-09-2019, rilascio non ufficiale - Test EX700MB 1.14
+SET VERSIONE=11.11.116.1
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================
