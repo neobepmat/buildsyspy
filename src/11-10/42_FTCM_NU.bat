@@ -1,7 +1,7 @@
 ﻿REM =========================================
-REM 15-10-2019, rilascio non ufficiale - Test per Bugfixing modifiche SBenedetto
-SET VERSIONE=11.11.160.1
-SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
+REM 18-10-2019, rilascio non ufficiale - Versione realizzata solo per permettere inizio collaudo commessa Concha Y Toro
+SET VERSIONE=11.11.161.1
+SET VERSIONE_WITH_TEXT=%VERSIONE%-develop-nonStable
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
 REM =========================================
