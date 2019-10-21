@@ -1,8 +1,9 @@
 ﻿REM =========================================
-REM 09-10-2019, rilascio non ufficiale - Test EX700MB 1.14
-SET VERSIONE=11.11.118.1
+REM 21-10-2019, rilascio non ufficiale - Versione specifica per permettere al team Software Commessa di proseguire - Concha Y Toro
+SET VERSIONE=11.11.119.1
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
+SET DEVICE_DRIVER_VERSION=%VERSIONE%-develop-nonStable
 REM =========================================
 
 REM CREAZIONE DIRECTORY PER I BINARY PRODOTTI
@@ -26,7 +27,6 @@ SET LOG_FILE=%BATCH_FOLDER%\log\SETUP_DEVICEDRIVER.LOG
 SET LOG_FILE_ERR=%BATCH_FOLDER%\log\SETUP_DEVICEDRIVER_ERR.LOG
 
 SET TDK_11_4=0
-SET DEVICE_DRIVER_VERSION=%VERSIONE%-develop
 SET PATH_MSBUILD=C:\Program Files (x86)\Microsoft Visual Studio\2017\Professional\MSBuild\15.0\Bin\MSBUILD.EXE
 SET WIX_TARGETSPATH=C:\Program Files (x86)\MSBuild\Microsoft\WiX\v3.x\wix.targets
 SET WIXCA_TARGETSPATH=C:\Program Files (x86)\MSBuild\Microsoft\WiX\v3.x\wix.ca.targets
