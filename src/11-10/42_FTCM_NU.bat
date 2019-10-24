@@ -1,7 +1,7 @@
 ﻿REM =========================================
-REM 18-10-2019, rilascio non ufficiale - Versione realizzata solo per permettere inizio collaudo commessa Concha Y Toro
-SET VERSIONE=11.11.161.1
-SET VERSIONE_WITH_TEXT=%VERSIONE%-develop-nonStable
+REM 24-10-2019, rilascio non ufficiale - Test principali su Concha Y Toro
+SET VERSIONE=11.11.162.1
+SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
 REM =========================================
