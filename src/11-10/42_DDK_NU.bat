@@ -1,9 +1,9 @@
 ﻿REM =========================================
-REM 21-10-2019, rilascio non ufficiale - Versione specifica per permettere al team Software Commessa di proseguire - Concha Y Toro
-SET VERSIONE=11.11.119.1
+REM 24-10-2019, rilascio non ufficiale - Test principale su Concha Y Toro
+SET VERSIONE=11.11.120.1
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
-SET DEVICE_DRIVER_VERSION=%VERSIONE%-develop-nonStable
+SET DEVICE_DRIVER_VERSION=%VERSIONE%-develop
 REM =========================================
 
 REM CREAZIONE DIRECTORY PER I BINARY PRODOTTI
