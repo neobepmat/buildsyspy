@@ -1,6 +1,6 @@
 ﻿REM =========================================
 REM 24-10-2019, rilascio non ufficiale - Test principali su Concha Y Toro
-SET VERSIONE=11.11.162.1
+SET VERSIONE=11.11.163.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
