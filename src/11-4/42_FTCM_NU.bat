@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 06-09-2019, 19-267 Bugfixing su salvataggio calibrazione Squeezer (C1911)
-SET VERSIONE=11.5.116.1
+REM 28-10-2019, 19-296 supporto lingua Bulgara
+SET VERSIONE=11.5.117.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-4
