@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 24-10-2019, rilascio non ufficiale - Test principale su Concha Y Toro
-SET VERSIONE=11.11.120.1
+REM 30-10-2019, rilascio non ufficiale - errata versione di HistoricFirmware?
+SET VERSIONE=11.11.121.1
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 SET DEVICE_DRIVER_VERSION=%VERSIONE%-develop
