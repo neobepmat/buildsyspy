@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 28-10-2019, 19-296 supporto lingua Bulgara
-SET VERSIONE=11.5.117.1
+REM 31-10-2019, 19-376 per rilascio nuovo DDK 11.4.5.1
+SET VERSIONE=11.5.118.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-4
