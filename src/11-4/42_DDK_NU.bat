@@ -1,6 +1,6 @@
 REM =========================================
-REM 08-11-2018, rilascio non ufficiale per calibrazione foodLeakTester
-SET VERSIONE=11.5.106.1
+REM 31-10-2019, rilascio non ufficiale per issue calibrazione Blocco Livello 2
+SET VERSIONE=11.5.107.1
 SET DEVICE_DRIVER_VERSION=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=TDK11-4
