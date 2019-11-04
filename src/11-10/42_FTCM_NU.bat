@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 04-11-2019, rilascio non ufficiale - Fix IE4000 x 11-10 - Concha Y Toro - 002
-SET VERSIONE=11.11.167.1
+REM 04-11-2019, rilascio non ufficiale - Test dopo cherry-pick da commit 11-4
+SET VERSIONE=11.11.168.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
