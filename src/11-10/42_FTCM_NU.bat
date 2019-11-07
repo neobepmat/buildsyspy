@@ -1,6 +1,6 @@
-﻿REM =========================================
-REM 04-11-2019, rilascio non ufficiale - Test dopo cherry-pick da commit 11-4
-SET VERSIONE=11.11.168.1
+REM =========================================
+REM 07-11-2019, rilascio non ufficiale - Fix per UserInterface/Overlord#110
+SET VERSIONE=11.11.169.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
