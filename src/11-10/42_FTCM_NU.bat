@@ -1,6 +1,6 @@
 REM =========================================
-REM 07-11-2019, rilascio non ufficiale - Fix per UserInterface/Overlord#110
-SET VERSIONE=11.11.169.1
+REM 13-11-2019, rilascio non ufficiale - Diversi Fix per SBenedetto
+SET VERSIONE=11.11.171.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
