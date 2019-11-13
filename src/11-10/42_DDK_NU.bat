@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 30-10-2019, rilascio non ufficiale - errata versione di HistoricFirmware?
-SET VERSIONE=11.11.121.1
+REM 13-11-2019, rilascio non ufficiale - test rilasci San Benedetto, ultimo firmware 3.61 C1911
+SET VERSIONE=11.11.122.1
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 SET DEVICE_DRIVER_VERSION=%VERSIONE%-develop
