@@ -1,6 +1,6 @@
 REM =========================================
-REM 13-11-2019, rilascio non ufficiale - Diversi Fix per SBenedetto
-SET VERSIONE=11.11.172.1
+REM 14-11-2019, rilascio non ufficiale - Diversi Fix per SBenedetto
+SET VERSIONE=11.11.173.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=11-10
