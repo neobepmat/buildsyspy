@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 23-12-2019, rilascio non ufficiale
-SET VERSIONE=11.11.124.1
+REM 30-12-2019, rilascio non ufficiale
+SET VERSIONE=11.11.125.1
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 SET DEVICE_DRIVER_VERSION=%VERSIONE%-develop
