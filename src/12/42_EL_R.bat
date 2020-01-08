@@ -5,11 +5,11 @@ REM data di rilascio ufficiale 09-10-2018
 SET EL_VERSIONE=1.0.0.0
 REM =========================================
 
-SET BATCH_ROOT_MOUNTPOINT=C:\git-11-10
+SET BATCH_ROOT_MOUNTPOINT=C:\git-12
 SET BATCH_ROOT_MOUNTPOINT_COMMON=C:\git-common
 rem -------------------------------------------
 
-SET BATCH_FOLDER_VERSIONE=%BATCH_ROOT_MOUNTPOINT%\BuildSystem
+SET BATCH_FOLDER_VERSIONE=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem
 
 SET PATH_MSBUILD=C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MSBUILD.EXE
 SET WIX_TARGETSPATH=C:\Program Files (x86)\MSBuild\Microsoft\WiX\v3.x\wix.targets
