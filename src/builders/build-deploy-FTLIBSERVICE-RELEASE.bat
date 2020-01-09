@@ -14,6 +14,7 @@ rem copia i files prodotti nella cartella del setup-source-tree
 SET BATCH_FOLDER_VERSIONE=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\src
 SET DEPENDENCIES_FOLDER=Dependencies
 SET SOLUTION_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\UWFLib\UWFLib\FTLibService\FTLibService.csproj
+SET SOLUTION_FOLDER_NUGET=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\UWFLib\UWFLib
 SET OUTPUT_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\UWFLib\UWFLib\bin
 SET FTLIBSERVICE_FOLDER=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\artifacts\FTLibService
 
@@ -22,7 +23,7 @@ ECHO percorso di MSBUILD: %PATH_MSBUILD%
 
 ECHO Sto effettuando il restore dei pacchetti Nuget
 
-"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SOLUTION_FOLDER%"
+"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SOLUTION_FOLDER%" -SolutionDirectory "%SOLUTION_FOLDER_NUGET%"
 
 ECHO Sto eseguendo i target Clean e Rebuild della soluzione
 
