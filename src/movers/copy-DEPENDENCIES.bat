@@ -1,6 +1,6 @@
 ECHO "Filename:" %0 1>&2
 
-SET BATCH_ROOT_MOUNTPOINT=Z:\GIT
+SET BATCH_ROOT_MOUNTPOINT=K:\GIT
 IF NOT [%ROOT_MOUNTPOINT%] == [] SET BATCH_ROOT_MOUNTPOINT=%ROOT_MOUNTPOINT%
 
 REM ------------------------------------------------------------------------
