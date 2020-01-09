@@ -1,6 +1,6 @@
 REM =========================================
 REM 08-01-2020: init
-SET VERSIONE=12.1.1
+SET VERSIONE=12.1.1.1
 SET VERSIONE_WITH_TEXT=%VERSIONE%-master
 SET DO_GIT_CHECKOUT=1
 SET BRANCH_TO_CHECKOUT=master

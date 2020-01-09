@@ -1,6 +1,6 @@
 ﻿REM =========================================
 REM 08-01-2020, init
-SET VERSIONE=13.1.1
+SET VERSIONE=13.1.1.1
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================
