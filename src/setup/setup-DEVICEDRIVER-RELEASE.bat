@@ -20,19 +20,19 @@ IF NOT ["%WIXCA_TARGETSPATH%"] == [""] SET INTERNAL_WIXCA_TARGETSPATH="%WIXCA_TA
 
 REM ------------------------------------------------------------------------
 
-SET SLN_DEVICEDRIVER_SETUP=%BATCH_ROOT_MOUNTPOINT_COMMON%\FT10Setup-TDKDeviceDriver\setup-tdkdevicedriver.sln
+SET SLN_DEVICEDRIVER_SETUP=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\setup-ddk\setup-tdkdevicedriver.sln
 
-SET OUTPUT_PATH=%BATCH_ROOT_MOUNTPOINT%\BuildSystem\src\msi-output\SETUPFT10devicedriver
-SET PACKAGE_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\FT10Setup-TDKDeviceDriver\setup-project\Packages\en-us
+SET OUTPUT_PATH=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\src\msi-output\SETUPFT10devicedriver
+SET PACKAGE_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\setup-ddk\setup-project\Packages\en-us
 
 @ECHO --deleting old files in [%PACKAGE_FOLDER%]
 DEL %PACKAGE_FOLDER%\*.* /Q
 
 @ECHO ---restoring nuget packages
-"%BATCH_ROOT_MOUNTPOINT%\BuildSystem\src\bin\nuget.exe" restore "%SLN_DEVICEDRIVER_SETUP%"
+"%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\src\bin\nuget.exe" restore "%SLN_DEVICEDRIVER_SETUP%"
 
 @ECHO ---building solution "%SLN_DEVICEDRIVER_SETUP%"
-"%PATH_MSBUILD%" "%SLN_DEVICEDRIVER_SETUP%" /P:FT_SOURCEDIR=%BATCH_ROOT_MOUNTPOINT%\BuildSystem\artifacts /P:WixCATargetsPath=%INTERNAL_WIXCA_TARGETSPATH% /P:WixTargetsPath=%INTERNAL_WIX_TARGETSPATH% /P:CONFIGURATION=Release /T:Rebuild /P:PLATFORM=x86 /P:TDK_11_4=%INTERNAL_TDK_11_4% /P:DEVICE_DRIVER_VERSION=%INTERNAL_DEVICE_DRIVER_VERSION%
+"%PATH_MSBUILD%" "%SLN_DEVICEDRIVER_SETUP%" /P:FT_SOURCEDIR=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\artifacts /P:WixCATargetsPath=%INTERNAL_WIXCA_TARGETSPATH% /P:WixTargetsPath=%INTERNAL_WIX_TARGETSPATH% /P:CONFIGURATION=Release /T:Rebuild /P:PLATFORM=x86 /P:TDK_11_4=%INTERNAL_TDK_11_4% /P:DEVICE_DRIVER_VERSION=%INTERNAL_DEVICE_DRIVER_VERSION%
 
 @ECHO ---creating output folder "%OUTPUT_PATH%"
 MKDIR "%OUTPUT_PATH%"

@@ -8,7 +8,7 @@ SET BRANCH_TO_CHECKOUT_COMMON=develop
 SET CONFIGURATION=Release
 REM =========================================
 
-SET ROOT_MOUNTPOINT=C:\GIT-11-10-beta
+SET ROOT_MOUNTPOINT=C:\GIT-12-beta
 
 SET ROOT_FOLDER=%ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem
 

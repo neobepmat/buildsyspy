@@ -31,4 +31,4 @@ SET GIT_EXE=C:\Program Files (x86)\Git\cmd\git.exe
 SET CURRENT_REPO=FAKE REPOSITORY
 SET CURRENT_FOLDER=%GIT-ROOT%\FakeRepository
 
-CALL "%GIT-ROOT%\BuildSystem\src\git-script\GIT-SINGLE_TAG.bat"
+CALL "%GIT-ROOT%\bitbucket-ft\BuildSystem\src\git-script\GIT-SINGLE_TAG.bat"

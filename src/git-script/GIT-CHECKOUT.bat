@@ -22,7 +22,7 @@ echo Starting Git Checkout...
 echo ---------------------
 echo Checking out OVERLORD
 echo ---------------------
-cd %GIT_ROOT%/Overlord
+cd %GIT_ROOT%/bitbucket-ft/Overlord12
 call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status
@@ -32,7 +32,7 @@ cd %DRIVE_GIT_ROOT%
 echo ----------------------------------
 echo Checking out ConfiguratoreOverlord
 echo ----------------------------------
-cd %GIT_ROOT%/ConfiguratoreOverlord
+cd %GIT_ROOT%/bitbucket-ft/hmiconfig12
 call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status
@@ -42,7 +42,7 @@ cd %DRIVE_GIT_ROOT%
 echo --------------------------
 echo Checking out TheDarkKnight
 echo --------------------------
-cd %GIT_ROOT%/TheDarkKnight
+cd %GIT_ROOT%/bitbucket-ft/tdk12
 call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status
@@ -52,7 +52,7 @@ cd %DRIVE_GIT_ROOT%
 echo --------------------------
 echo Checking out TheDarkKnight DeviceDriver
 echo --------------------------
-cd %GIT-ROOT-COMMON%/TheDarkKnightDeviceDriver
+cd %GIT-ROOT-COMMON%/bitbucket-ft/ddk12
 call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status
@@ -62,7 +62,7 @@ cd %DRIVE_GIT_ROOT%
 echo --------------------------
 echo Checking out TheDarkKnight Setup
 echo --------------------------  
-cd %GIT-ROOT-COMMON%/FT10-Setup  
+cd %GIT-ROOT-COMMON%/bitbucket-ft/setup-tdk
 call "%GIT_EXE%" reset --hard
 call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
 call "%GIT_EXE%" pull
@@ -72,7 +72,7 @@ cd %DRIVE_GIT_ROOT%
 echo --------------------------  
 echo Checking out TheDarkKnight DeviceDriver Setup
 echo --------------------------
-cd %GIT-ROOT-COMMON%/FT10Setup-TDKDeviceDriver
+cd %GIT-ROOT-COMMON%/bitbucket-ft/setup-ddk
 call "%GIT_EXE%" reset --hard
 call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
 call "%GIT_EXE%" pull
@@ -82,7 +82,7 @@ cd %DRIVE_GIT_ROOT%
 echo --------------------------
 echo Checking out FTSystem Shutdown
 echo --------------------------
-cd %GIT-ROOT-COMMON%/FTSystem.ShutDownPC
+cd %GIT-ROOT-COMMON%/bitbucket-ft/ftsystem.ShutDownPC
 call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status
@@ -91,16 +91,7 @@ cd %DRIVE_GIT_ROOT%
 echo --------------------------
 echo Checking out RDP
 echo --------------------------
-cd %GIT-ROOT-COMMON%/FTSystem.RDP
-call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
-call "%GIT_EXE%" pull
-call "%GIT_EXE%" status
-cd %DRIVE_GIT_ROOT%
-
-echo -------------------------
-echo Checking out FTSystem Communication Framework
-echo --------------------------
-cd %GIT-ROOT-COMMON%/FTSystemCommunicationFramework
+cd %GIT-ROOT-COMMON%/bitbucket-ft/ftsystem.RDP
 call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status
@@ -109,7 +100,16 @@ cd %DRIVE_GIT_ROOT%
 echo --------------------------
 echo Checking out UWFLib
 echo --------------------------
-cd %GIT-ROOT-COMMON%/UWFLib.git
+cd %GIT-ROOT-COMMON%/bitbucket-ft/uwflib
+call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
+call "%GIT_EXE%" pull
+call "%GIT_EXE%" status
+cd %DRIVE_GIT_ROOT%
+
+echo --------------------------
+echo Checking out TheDarkKnightCommunicationFramework
+echo --------------------------
+cd %GIT-ROOT-COMMON%/bitbucket-ft/tdkcommunicationframework
 call "%GIT_EXE%" checkout %LOCAL_BRANCH_TO_CHECKOUT_COMMON%
 call "%GIT_EXE%" pull
 call "%GIT_EXE%" status

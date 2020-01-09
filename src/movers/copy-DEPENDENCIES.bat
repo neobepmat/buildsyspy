@@ -6,10 +6,10 @@ IF NOT [%ROOT_MOUNTPOINT%] == [] SET BATCH_ROOT_MOUNTPOINT=%ROOT_MOUNTPOINT%
 REM ------------------------------------------------------------------------
 
 SET DEVEXPRESS_FOLDER=C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework
-SET DEPENDENCIES_FOLDER=%BATCH_ROOT_MOUNTPOINT%\BuildSystem\artifacts\dependencies
+SET DEPENDENCIES_FOLDER=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\artifacts\dependencies
 
 SET FTCM_FOLDER=C:\FTSYSTEM\BIN
-SET COMVB6_FOLDER=%BATCH_ROOT_MOUNTPOINT%\BuildSystem\artifacts\LibrerieVB6\com_vb6
+SET COMVB6_FOLDER=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\artifacts\LibrerieVB6\com_vb6
 
 XCOPY /S /I "%DEVEXPRESS_FOLDER%\de" "%DEPENDENCIES_FOLDER%\de" /Y
 XCOPY /S /I "%DEVEXPRESS_FOLDER%\ru" "%DEPENDENCIES_FOLDER%\ru" /Y

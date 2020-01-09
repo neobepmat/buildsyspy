@@ -1,23 +1,23 @@
 ECHO "Filename:" %0 1>&2
 
-SET BATCH_ROOT_MOUNTPOINT=Z:\GIT
+SET BATCH_ROOT_MOUNTPOINT=K:\GIT
 IF NOT [%ROOT_MOUNTPOINT%] == [] SET BATCH_ROOT_MOUNTPOINT=%ROOT_MOUNTPOINT%
 
-SET BATCH_ROOT_MOUNTPOINT_COMMON=Z:\GIT
+SET BATCH_ROOT_MOUNTPOINT_COMMON=K:\GIT
 IF NOT [%ROOT_MOUNTPOINT_COMMON%] == [] SET BATCH_ROOT_MOUNTPOINT_COMMON=%ROOT_MOUNTPOINT_COMMON%
 
 rem ------------------------------------
 
 rem copia i files prodotti nella cartella del setup-source-tree
 
-SET BATCH_FOLDER_VERSIONE=%BATCH_ROOT_MOUNTPOINT%\BuildSystem\src
-SET SETUP_SOURCE_FOLDER=%BATCH_ROOT_MOUNTPOINT%\BuildSystem\artifacts
+SET BATCH_FOLDER_VERSIONE=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\src
+SET SETUP_SOURCE_FOLDER=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\artifacts
 SET TCP_FOLDER=TCPIP\4.0.0
 SET DEPENDENCIES_FOLDER=Dependencies
 
-SET SOLUTION_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\TheDarkKnightCommunicationFramework\src\TheDarkKnightCommunicationFramework\TheDarkKnightCommunicationFramework.sln
+SET SOLUTION_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\tdkCommunicationFramework\src\TheDarkKnightCommunicationFramework\TheDarkKnightCommunicationFramework.sln
 
-SET PROJECT_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\TheDarkKnightCommunicationFramework\src\TheDarkKnightCommunicationFramework\\FTSystem.Communication.FTCMMessageDispatcher\FTSystem.Communication.FTCMMessageDispatcher.csproj
+SET PROJECT_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\tdkCommunicationFramework\src\TheDarkKnightCommunicationFramework\\FTSystem.Communication.FTCMMessageDispatcher\FTSystem.Communication.FTCMMessageDispatcher.csproj
 
 SET OUTPUT_FOLDER=C:\FTSYSTEM\BIN
 
