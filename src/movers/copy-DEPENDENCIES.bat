@@ -3,15 +3,17 @@ ECHO "Filename:" %0 1>&2
 SET BATCH_ROOT_MOUNTPOINT=K:\GIT
 IF NOT [%ROOT_MOUNTPOINT%] == [] SET BATCH_ROOT_MOUNTPOINT=%ROOT_MOUNTPOINT%
 
+SET INTERNAL_BATCH_FOLDER=K:\GIT\BuildSystem\bitbucket-ft\src
+IF NOT [%BATCH_FOLDER%] == [] SET INTERNAL_BATCH_FOLDER=%BATCH_FOLDER%
+
 REM ------------------------------------------------------------------------
 
-SET DEVEXPRESS_FOLDER=C:\Program Files (x86)\DevExpress 17.1\Components\Bin\Framework
 SET DEPENDENCIES_FOLDER=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\artifacts\dependencies
 
 SET FTCM_FOLDER=C:\FTSYSTEM\BIN
 SET COMVB6_FOLDER=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\artifacts\LibrerieVB6\com_vb6
 
-call copy-DEVEXPRESS.bat
+call %INTERNAL_BATCH_FOLDER%\movers\copy-DEVEXPRESS.bat
 
 rem copy "%FTCM_FOLDER%\epplus.dll" "%DEPENDENCIES_FOLDER%"
 copy "%FTCM_FOLDER%\ftd2xx" "%DEPENDENCIES_FOLDER%"
