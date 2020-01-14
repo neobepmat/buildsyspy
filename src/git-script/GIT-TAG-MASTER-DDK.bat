@@ -26,13 +26,13 @@ PAUSE
 SET GIT_EXE=C:\Program Files (x86)\Git\cmd\git.exe
 
 SET CURRENT_REPO=THEDARKKNIGHT DEVICE DRIVER
-SET CURRENT_FOLDER=%GIT-ROOT-COMMON%\TheDarkKnightDeviceDriver
+SET CURRENT_FOLDER=%GIT-ROOT-COMMON%\bitbucket-ft\ddk12
 SET DEMO=%DEMO%
 
-CALL "%GIT-ROOT%\BuildSystem\src\git-script\GIT-SINGLE_TAG.bat"
+CALL "%GIT-ROOT%\bitbucket-ft\BuildSystem\src\git-script\GIT-SINGLE_TAG.bat"
 
 SET CURRENT_REPO=THEDARKKNIGHT DEVICE DRIVER SETUP
-SET CURRENT_FOLDER=%GIT-ROOT-COMMON%\FT10Setup-TDKDeviceDriver
+SET CURRENT_FOLDER=%GIT-ROOT-COMMON%\bitbucket-ft\setup-ddk
 SET DEMO=%DEMO%
 
-CALL "%GIT-ROOT%\BuildSystem\src\git-script\GIT-SINGLE_TAG.bat"
+CALL "%GIT-ROOT%\bitbucket-ft\BuildSystem\src\git-script\GIT-SINGLE_TAG.bat"
