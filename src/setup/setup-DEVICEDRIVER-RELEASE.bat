@@ -22,7 +22,7 @@ REM ------------------------------------------------------------------------
 
 SET SLN_DEVICEDRIVER_SETUP=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\setup-ddk\setup-tdkdevicedriver.sln
 
-SET OUTPUT_PATH=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\src\msi-output\SETUPFT10devicedriver
+SET OUTPUT_PATH=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\src\msi-output\setup-ddk
 SET PACKAGE_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\setup-ddk\setup-project\Packages\en-us
 
 @ECHO --deleting old files in [%PACKAGE_FOLDER%]

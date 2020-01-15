@@ -28,7 +28,7 @@ REM --------------------------------------
 
 SET SLN_TDK_SETUP=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\setup-hmi\setup-project\setup-project.sln
 
-SET OUTPUT_PATH=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\src\msi-output\SETUPFT10
+SET OUTPUT_PATH=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\src\msi-output\setup-hmi
 
 SET PACKAGE_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\setup-hmi\setup-project\setup-project\Packages\en-us
 

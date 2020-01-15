@@ -23,7 +23,7 @@ SET SETUP_PROJECT=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\ExternalLogin\Setu
 SET OUTPUT_FOLDER=C:\FTSYSTEM\BIN
 SET MSI_OUTPUT_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\ExternalLogin\Setup\ExternalLoginSetup\bin\Release
 
-SET OUTPUT_PATH=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\src\msi-output\SETUPFT10-EXTERNALLOGIN
+SET OUTPUT_PATH=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem\src\msi-output\SETUP-EXTERNALLOGIN
 
 ECHO Sto generando la build in RELEASE del pacchetto ExternalLogin (costruisce e copia in ftsystem/bin tutti gli assembly sviluppati)
 ECHO percorso di MSBUILD: %PATH_MSBUILD%

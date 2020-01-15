@@ -4,8 +4,8 @@ batch/dist/
 batch/build/
 batch/VB6MAKE_ERRORLOG_CONFIGURATORE.TXT
 batch/VB6MAKE_ERRORLOG_OVERLORD.TXT
-batch/SETUPFT10devicedriver/
-batch/SETUPFT10/
+batch/setup-hmi/
+batch/setup-ddk/
 dependencies/*
 Rfid/*
 Exe/*
