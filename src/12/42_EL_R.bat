@@ -2,7 +2,7 @@ REM NOTHING
 ECHO "Filename:" %0 1>&2
 REM =========================================
 REM data di rilascio ufficiale 09-10-2018
-SET EL_VERSIONE=1.0.0.0
+SET EL_VERSIONE=1.1.0.0
 REM =========================================
 
 SET BATCH_ROOT_MOUNTPOINT=C:\git-12

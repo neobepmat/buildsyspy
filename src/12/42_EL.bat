@@ -1,6 +1,6 @@
 REM NOTHING
 ECHO "Filename:" %0 1>&2
-SET EL_VERSIONE=1.0.0.0
+SET EL_VERSIONE=1.1.0.0
 REM -------------------------------------
 
 SET BATCH_ROOT_MOUNTPOINT=K:\GIT

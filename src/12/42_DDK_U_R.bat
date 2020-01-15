@@ -1,6 +1,6 @@
 ﻿REM =========================================
 REM 08-01-2020: init
-SET VERSIONE=12.1.1.1-master
+SET VERSIONE=1.0.0.0-master
 SET DO_GIT_CHECKOUT=1
 SET RILASCIO_UFFICIALE=1
 SET BRANCH_TO_CHECKOUT=master

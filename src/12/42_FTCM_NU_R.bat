@@ -1,6 +1,6 @@
 REM =========================================
 REM 08-01-2020: init
-SET VERSIONE=13.1.1.1
+SET VERSIONE=101.0.0.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET DO_GIT_CHECKOUT=1
 SET BRANCH_TO_CHECKOUT=develop
