@@ -1,6 +1,6 @@
 REM =========================================
-REM 15-01-2020, rilascio interno SanBenedetto (19-480)
-SET VERSIONE=101.0.0.0
+REM 17-01-2020, rilascio interno SanBenedetto (19-480)
+SET VERSIONE=101.0.2.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=12
