@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 17-01-2020, rilascio interno SanBenedetto (19-480)
-SET VERSIONE=101.0.3.0
+REM 22-01-2020, rilascio interno per RoboQcs (FT19-030)
+SET VERSIONE=101.0.4.0
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================
