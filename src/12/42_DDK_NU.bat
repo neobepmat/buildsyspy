@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 22-01-2020, rilascio interno per RoboQcs (FT19-030)
-SET VERSIONE=101.0.4.0
+REM 24-01-2020, rilascio interno per test storico json cog_insight(19-416)
+SET VERSIONE=101.0.5.0
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================
