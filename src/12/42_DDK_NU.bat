@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 24-01-2020, rilascio interno per test storico json cog_insight(19-416)
-SET VERSIONE=101.0.5.0
+REM 03-02-2020, rilascio interno per test migrazione LDS (19-405)
+SET VERSIONE=101.0.6.0
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================
