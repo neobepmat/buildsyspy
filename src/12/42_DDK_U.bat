@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 08-01-2020: init
-SET VERSIONE=1.0.0.0
+REM 03-02-2020: Rilascio per LDS
+SET VERSIONE=1.1.0.0
 SET RILASCIO_UFFICIALE=1
 SET CONFIGURATION=Release
 REM =========================================
