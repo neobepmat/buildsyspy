@@ -55,7 +55,7 @@ copy "%COMVB6_FOLDER%\Translator.dll" "%FTCM_FOLDER%"
 copy "%FTCM_FOLDER%\EntityFramework.dll" "%DEPENDENCIES_FOLDER%"
 copy "%FTCM_FOLDER%\EntityFramework.SqlServer.dll" "%DEPENDENCIES_FOLDER%"
 
-copy "%FTCM_FOLDER%\Flee.dll" "%DEPENDENCIES_FOLDER%"
+copy "%FTCM_FOLDER%\Flee.Net45.dll" "%DEPENDENCIES_FOLDER%"
 
 copy "%FTCM_FOLDER%\Newtonsoft.Json.dll" "%DEPENDENCIES_FOLDER%"
 copy "%FTCM_FOLDER%\Newtonsoft.Json.Schema.dll" "%DEPENDENCIES_FOLDER%"
