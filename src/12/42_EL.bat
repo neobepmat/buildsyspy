@@ -1,7 +1,8 @@
-REM NOTHING
+REM =========================================
+REM 06-02-2020: Rilascio nuovo driver Euchner
 ECHO "Filename:" %0 1>&2
-SET EL_VERSIONE=1.1.0.0
-REM -------------------------------------
+SET EL_VERSIONE=1.2.0.0
+REM =========================================
 
 SET BATCH_ROOT_MOUNTPOINT=K:\GIT
 SET BATCH_ROOT_MOUNTPOINT_COMMON=K:\GIT
