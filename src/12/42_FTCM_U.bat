@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 03-02-2020: Rilascio per LDS
-SET VERSIONE=1.1.0.0
+REM 06-02-2020: Rilascio per bugfix sezione utenti
+SET VERSIONE=1.2.0.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-master
 SET DO_GIT_CHECKOUT=1
 SET BRANCH_TO_CHECKOUT=master
