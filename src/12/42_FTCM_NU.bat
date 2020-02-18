@@ -1,7 +1,7 @@
 REM =========================================
-REM 03-02-2020, rilascio interno per test migrazione LDS (19-405)
-SET VERSIONE=101.0.4.0
-SET VERSIONE_WITH_TEXT=%VERSIONE%-develop-LDSMigration
+REM 18-02-2020, rilascio interno per test nuovo tasto calibrazione IE4000 (19-350)
+SET VERSIONE=101.0.5.0
+SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=12
 REM =========================================
