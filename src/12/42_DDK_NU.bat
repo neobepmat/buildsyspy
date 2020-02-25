@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 03-02-2020, rilascio interno per test migrazione LDS (19-405)
-SET VERSIONE=101.0.6.0
+REM 25-02-2020, rilascio interno per test RoboQcs stazione CO2
+SET VERSIONE=101.0.7.0
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================
