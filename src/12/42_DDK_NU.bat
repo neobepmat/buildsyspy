@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 25-02-2020, rilascio interno per test RoboQcs stazione CO2
-SET VERSIONE=101.0.7.0
+REM 26-02-2020, rilascio interno per test Json C1911 SHAPE, SQUEEZER and SAMPLING_REV_2
+SET VERSIONE=101.0.8.0
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================
