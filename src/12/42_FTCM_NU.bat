@@ -1,6 +1,6 @@
 REM =========================================
-REM 25-02-2020, rilascio interno per test RoboQcs stazione CO2
-SET VERSIONE=101.0.6.0
+REM 28-02-2020, rilascio interno per bugfix historicLocalization
+SET VERSIONE=101.0.8.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=12
