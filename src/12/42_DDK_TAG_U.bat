@@ -8,7 +8,7 @@ NET USE %TEMP_DRIVE_LETTER% \\VBOXSRV\C_DRIVE
 SET GIT-ROOT=K:\GIT
 set GIT-ROOT-COMMON=k:\GIT
 :: Warning! Alays use the slash forward within the version number - the backslash is not allowed
-SET TAG=v12/1.1.0.0
+SET TAG=v12/1.2.0.0
 :: used to start the task as simulated
 SET DEMO=0 
 SET EXT_LOG_FILE=%GIT-ROOT%\bitbucket-ft\BuildSystem\src\log\GIT-TAG_DDK_12_MASTER.log
