@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 03-02-2020: Rilascio per LDS
-SET VERSIONE=1.1.0.0
+REM 02-03-2020: Rilascio per Storico C1911 e bug storico localizzazioni
+SET VERSIONE=1.2.0.0
 SET RILASCIO_UFFICIALE=1
 SET CONFIGURATION=Release
 REM =========================================
