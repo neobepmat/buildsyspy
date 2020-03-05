@@ -1,5 +1,5 @@
 REM =========================================
-REM 05-03-2020, rilascio interno per bugfix Chiamata non bloccate su OnIncomingMessage del Dispatcher
+REM 05-03-2020, rilascio interno per test roboqcs CO2
 SET VERSIONE=101.0.9.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
