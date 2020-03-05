@@ -1,6 +1,6 @@
 REM =========================================
-REM 28-02-2020, rilascio interno per bugfix historicLocalization
-SET VERSIONE=101.0.8.0
+REM 05-03-2020, rilascio interno per bugfix Chiamata non bloccate su OnIncomingMessage del Dispatcher
+SET VERSIONE=101.0.9.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=12
