@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 27-02-2020, rilascio interno per test EX700MB 1.16 RoboQcs CO2
-SET VERSIONE=101.0.10.0
+REM 06-03-2020, rilascio interno per test Calibrazione VisionPro Tropicana
+SET VERSIONE=101.0.11.0
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================
