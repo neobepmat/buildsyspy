@@ -1,6 +1,6 @@
 REM =========================================
-REM 06-03-2020, rilascio interno per test Concha Y toro. Generazione report su thread separato
-SET VERSIONE=101.0.11.0
+REM 06-03-2020, rilascio interno con merge completa da tutte le branch di sviluppo
+SET VERSIONE=101.0.12.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=12
