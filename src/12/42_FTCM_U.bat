@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 02-03-2020: Rilascio per nuovi storici C1911 e bug gestione storico localizzazioni
-SET VERSIONE=1.3.0.0
+REM 09-03-2020: Rilasdcio ufficiale da develop
+SET VERSIONE=1.4.0.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-master
 SET DO_GIT_CHECKOUT=1
 SET BRANCH_TO_CHECKOUT=master
