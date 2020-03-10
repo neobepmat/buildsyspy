@@ -1,0 +1,10 @@
+
+
+msbuild SolutionFile.sln /t:build /fl /flp:logfile=MyProjectOutput.log;verbosity=diagnostic
+
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe" "Z:\GIT\Wix-Setup-Sandbox\setup-test\SETUP-TEST.SLN" /t:build /flp:logfile=MyProjectOutput.log;verbosity=diagnostic /p:Configuration=Debug;Platform=x86
+
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe" "Z:\GIT\Wix-Setup-Sandbox\setup-test\setup-test\setup-test.wixproj" /t:build /flp:logfile=MyProjectOutput.log;verbosity=diagnostic /p:Configuration=Debug;Platform=x86
+
+
+"C:\Windows\Microsoft.NET\Framework\v4.0.30319\MSBuild.exe" "Z:\GIT\TheDarkKnightDeviceDriver\TheDarkKnightDeviceDriver.sln" /t:Clean,Build /flp:logfile=TheDarkKnightDeviceDriver.log;verbosity=diagnostic /p:Configuration=Debug;Platform=x86
