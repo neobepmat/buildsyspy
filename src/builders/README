@@ -1,0 +1,39 @@
+Introduciamo il concetto di TASK.
+
+Ogni TASK è un file di configurazione, in formato testuale INI, dove vengono definite delle sezioni con chiavi predefinite.
+
+La prima sezione è la DEFAULT.
+Questa sezione contiene le seguenti key:
+
+	Description,
+		contiene la descrizione della azione che il singolo TASK andrà ad eseguire
+
+La sezione MSBUILD_PARAMS andrà a contenere le chiavi utili per l'esecuzione di un modulo di builda da eseguirsi con MsBuild.
+Andrà a contenere le seguenti key:
+
+	MsBuild_Path,
+		contiene il percorso completo da cui prelevare il file msbuild.exe
+
+	DoRestoreNuget=
+		0/1, indica se deve essere eseguito un restore dei pacchetti Nuget prima di eventuali azioni di Build
+
+	DoClean
+		0/1, indica se eseguire una azione di Clean
+
+	DoRebuild
+		0/1, indica se eseguire una azione di Rebuild
+
+	DoSetBuildError
+		0/1, indica se l'esecuzione di MSBuild ritorna un valore che indica se l'operazione è andata a buon fine
+
+	Configuration
+		Release/Debug, indica quale configurazione usare per l'esecuzione di MSBuild
+
+	Platform=
+		x86/x64/AnyCpu, indica quale platform utilizzare per l'esecuzione di MSBuild
+
+	Solution_Path
+		il path completo della Soluzione/Project su cui eseguire la build
+
+	OutputPath
+		il path completo
