@@ -1,6 +1,6 @@
 REM =========================================
-REM 24-03-2020, rilascio interno per test Burst Monitoring
-SET VERSIONE=101.0.18.0
+REM 31-03-2020, rilascio interno per test batch variable fields FTCM12-25
+SET VERSIONE=101.0.19.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=12
