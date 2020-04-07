@@ -1,6 +1,6 @@
 REM =========================================
-REM 31-03-2020, rilascio interno per test batch variable fields FTCM12-25
-SET VERSIONE=101.0.19.0
+REM 07-04-2020, rilascio interno per test FTCM12-32 Gestione Test
+SET VERSIONE=101.0.20.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=12

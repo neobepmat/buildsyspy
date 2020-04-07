@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 31-03-2020, rilascio interno per test vacuum_pressure c1911 Json
-SET VERSIONE=101.0.13.0
+REM 07-04-2020, rilascio interno per test FTCM12-32 Gestione Test modificata
+SET VERSIONE=101.0.14.0
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================
