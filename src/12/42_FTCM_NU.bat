@@ -1,6 +1,6 @@
 REM =========================================
-REM 07-04-2020, rilascio interno per test FTCM12-32 Gestione Test
-SET VERSIONE=101.0.20.0
+REM 07-04-2020, test FTCM12-32, possibile risoluzione memory leak FTCM12-29
+SET VERSIONE=101.0.22.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=12
