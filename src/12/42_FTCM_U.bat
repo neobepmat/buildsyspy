@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 25-03-2020: Rilascio ufficiale principalmente per Tropicana
-SET VERSIONE=1.7.0.0
+REM 09-04-2020: Rilascio ufficiale principalmente per Tropicana
+SET VERSIONE=1.8.0.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-master
 SET DO_GIT_CHECKOUT=0
 SET BRANCH_TO_CHECKOUT=master
