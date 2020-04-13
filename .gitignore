@@ -3,3 +3,4 @@ src/msi-output/*
 artifacts/Dependencies
 Thumbs.db
 *.pyc
+venv/
