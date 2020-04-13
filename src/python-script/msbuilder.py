@@ -216,15 +216,3 @@ class MsBuilder:
 		print( '\n\n' + '-'*80)
 		print( summary)
 		print( '-'*80)
-		
-	def log(self, message, start=None):
-		timestamp = ''
-		numsecs = ''
-		if start is not None:
-			split = datetime.datetime.now()
-			diff = split - start
-			timestamp = split.strftime("%Y-%m-%d %H:%M:%S") + '\t'
-			numsecs = ' (' + str(diff.seconds) + ' seconds)'
-		msg = timestamp + message + numsecs + '\n\n'
-		print( '='*10 + '> ' + msg)
-		return msg

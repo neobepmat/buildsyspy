@@ -1,0 +1,16 @@
+2020-04-14 00:19:01,919 - __main__ - INFO - Python path: C:\git\bitbucket-ft\buildsystem\venv\Scripts\python.exe
+2020-04-14 00:20:24,030 - __main__ - INFO - Python path: C:\git\bitbucket-ft\buildsystem\venv\Scripts\python.exe
+2020-04-14 00:20:24,030 - buildSystemConfiguration - DEBUG - Trying to open filename[versions/12-U-Version.ini]
+2020-04-14 00:20:24,031 - buildSystemConfiguration - DEBUG - Trying to open filename[config/12-U-config.ini]
+2020-04-14 00:20:43,552 - __main__ - INFO - Python path: C:\git\bitbucket-ft\buildsystem\venv\Scripts\python.exe
+2020-04-14 00:20:43,552 - buildSystemConfiguration - DEBUG - Trying to open filename[versions/12-U-Version.ini]
+2020-04-14 00:20:43,553 - buildSystemConfiguration - DEBUG - Trying to open filename[config/12-U-config.ini]
+2020-04-14 00:20:43,555 - buildSystemConfiguration - DEBUG - Trying to open filename[config/12-local.ini]
+2020-04-14 00:39:42,871 - __main__ - INFO - Python path: C:\git\bitbucket-ft\buildsystem\venv\Scripts\python.exe
+2020-04-14 00:39:42,871 - buildSystemConfiguration - DEBUG - Trying to open filename[versions/12-U-Version.ini]
+2020-04-14 00:39:42,872 - buildSystemConfiguration - DEBUG - Trying to open filename[config/12-U-config.ini]
+2020-04-14 00:39:42,873 - buildSystemConfiguration - DEBUG - Trying to open filename[config/12-local.ini]
+2020-04-14 00:40:25,766 - __main__ - INFO - Python path: C:\git\bitbucket-ft\buildsystem\venv\Scripts\python.exe
+2020-04-14 00:40:25,767 - buildSystemConfiguration - DEBUG - Trying to open filename[versions/12-U-Version.ini]
+2020-04-14 00:40:25,767 - buildSystemConfiguration - DEBUG - Trying to open filename[config/12-U-config.ini]
+2020-04-14 00:40:25,768 - buildSystemConfiguration - DEBUG - Trying to open filename[config/12-local.ini]

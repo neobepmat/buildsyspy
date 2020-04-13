@@ -1,60 +1,88 @@
 # coding=utf-8
 import os, shlex, subprocess, re, datetime
-import ConfigParser
+import configparser
+import loggerFactory
 
 class BuildSystemConfiguration:
 
 	def __init__(self, iniFileName):
 		self.iniFileName = iniFileName
-		self.doCheckIniExists()
+		self.log = loggerFactory.getLog(__name__)
+		self.__loadConfiguration(iniFileName)
 
-		if self.fileEsiste:
-			self.InternalParameters()
-	
-	def doCheckIniExists(self):
-		self.fileEsiste = os.path.exists(self.iniFileName)
+	def __loadConfiguration(self, iniFileName):
+		retBool = self.__doIniExists(iniFileName)
+
+		if retBool == False:
+			self.log.error("Error in ", __name__)
+			exit(main())
+
+		self.__read_versionIni(iniFileName)
+
+		retBool = self.__doIniExists(self.configIni)
+		if retBool == False:
+			self.log.error("Error in ", __name__)
+			exit(main())
+
+		self.__read_configIni(self.configIni)
+
+		retBool = self.__doIniExists(self.localIni)
+		if retBool == False:
+			self.log.error("Error in ", __name__)
+			exit(main())
+
+		self.__read_localIni(self.localIni)
+
+	def __doIniExists(self, iniFileName):
+		self.log.debug("Trying to open filename[" + iniFileName +"]")
+		self.fileEsiste = os.path.exists(iniFileName)
 		if self.fileEsiste == False:
-			print ("-----------------------------------------------")
-			print("FILE " + str(self.iniFileName) + " NOT FOUND!")
-			print ("-----------------------------------------------")
+			self.log.debug("-----------------------------------------------")
+			self.log.debug("FILE " + str(iniFileName) + " NOT FOUND!")
+			self.log.debug("-----------------------------------------------")
+			return false
 
-	def InternalParameters(self):
-		config = ConfigParser.ConfigParser()
-		config.read(self.iniFileName)
-		self.rootMountPoint = config.get('MAIN_PATHS','ROOT_MOUNTPOINT','undefined')
+	def __read_configIni(self, iniFileName):
+		config = configparser.ConfigParser()
+		config.read(iniFileName)
+
+		self.main_Target = config['TARGET']['MAIN_TARGET']
+		self.rilascio = int(config['TARGET']['RILASCIO_UFFICIALE'])
+
+		main_paths = config['MAIN_PATHS']
+		self.rootMountPoint = main_paths['ROOT_MOUNTPOINT']
 		self.rootFolder = 'undefined'
-		self.rootMountPointCommon= config.get('MAIN_PATHS','ROOT_MOUNTPOINT_COMMON','undefined')
+		self.rootMountPointCommon= main_paths['ROOT_MOUNTPOINT_COMMON']
 		self.batchFolder= 'undefined'
-		self.rootSourceFolder = config.get('MAIN_PATHS','ROOT_SOURCE_FOLDER','undefined')
+		self.rootSourceFolder = main_paths['ROOT_SOURCE_FOLDER']
+		
+		self.commonIni = config['COMMON_FILE']['COMMON_INI']
+		self.localIni = config['LOCAL_FILE']['LOCAL_INI']
 
-	def Read_Ini(self):
-		if self.fileEsiste:
-			config = ConfigParser.ConfigParser()
-			config.read(self.iniFileName)
-			
-			self.versione = config.get('DEFAULT','VERSIONE','11')
-			self.versioneWithText = config.get('DEFAULT','VERSIONE_WITH_TEXT','-undefined')
-			self.versioneWithText = self.versione + self.versioneWithText
+		self.__setRilascioUfficiale(self.rilascio)
 
-			self.rilascio = config.getint('TARGET','RILASCIO_UFFICIALE')
+		self.__setVersione(self.versione, self.versioneWithText)
 
-			self.main_Target = config.get('TARGET','MAIN_TARGET', 'Undefined')
+		self.__setCommonFolders()
 
-			self.setRilascioUfficiale(self.rilascio)
+		self.__setOverlord()
 
-			self.setVersione(self.versione, self.versioneWithText)
+	def __read_versionIni(self, iniFileName):
+		config = configparser.ConfigParser()
+		config.read(iniFileName)
+		
+		self.versionIni = iniFileName
+		self.latestRunDate = config['DEFAULT']['LATEST_RUN_DATE']
+		self.versione = config['DEFAULT']['VERSIONE']
+		self.versioneWithText = config['DEFAULT']['VERSIONE_WITH_TEXT']
+		self.versioneWithText = self.versione + self.versioneWithText
+		self.configIni = config['CONFIG_FILE']['PATH']
 
-			self.setCommonFolders()
-
-			self.setOverlord()
-
-			self.setMsbuildPaths(self.iniFileName)
-
-	def setVersione(self, version, extended_text):
+	def __setVersione(self, version, extended_text):
 		self.versione = version
 		self.version_with_text = version + extended_text
 
-	def setRilascioUfficiale(self, rilascio):
+	def __setRilascioUfficiale(self, rilascio):
 		if rilascio == 1:
 			self.rilascioUfficiale = True
 			self.rilascioNonUfficiale = False
@@ -62,56 +90,62 @@ class BuildSystemConfiguration:
 			self.rilascioUfficiale = False
 			self.rilascioNonUfficiale = True
 
-	def setOverlord(self):
+	def __setOverlord(self):
 		self.projectPathOVERLORD = self.rootSourceFolder + '\\OVERLORD\\FTControlsManager.vbp'
 		self.projectPathCONFIGURATORE = self.rootSourceFolder + '\\CONFIGURATOREOVERLORD\\FTControlsManagerConfigurator.vbp'
 		return;
 
-	def setCommonFolders(self):
+	def __setCommonFolders(self):
 		self.rootFolder = self.rootMountPoint + '\\BuildSystem'
 		self.batchFolder = self.rootFolder + '\\src'
 
-	def setMsbuildPaths(self, iniFileName):
-		config = ConfigParser.ConfigParser()
+	def __read_localIni(self, iniFileName):
+		config = configparser.ConfigParser()
 		config.read(iniFileName)
 
-		msBuildPathsFilename = config.get('MSBUILD_FILE','MSBUILD_FILE_NAME')
-
-		config = ConfigParser.ConfigParser()
-		config.read(msBuildPathsFilename)
-
-		self.pathMsbuild = config.get('MSBUILD_WIX_PATHS','PATH_MSBUILD', 'undefined')
-		self.wixTargetsPath = config.get('MSBUILD_WIX_PATHS','WIX_TARGETSPATH', 'undefined')
-		self.wixcaTargetsPath = config.get('MSBUILD_WIX_PATHS','WIXCA_TARGETSPATH', 'undefined')
-
+		self.pathMsbuild = config['MSBUILD']['MSBUILD_FULL_PATH']
+		
+		self.wixTargetsPath = config['MSBUILD_WIX_PATHS']['WIX_TARGETSPATH']
+		self.wixcaTargetsPath = config['MSBUILD_WIX_PATHS']['WIXCA_TARGETSPATH']
+		
+		self.nugetPath = config['NUGET']['NUGET_FULL_PATH']
 
 	def print_func(self):
-		if self.fileEsiste:
-			print ("-----------------------------------------------")
-			print ("Configurazione Build --------------------------")
-			print ("-----------------------------------------------")
+		print ("-----------------------------------------------")
+		print ("Configurazione Build --------------------------")
+		print ("-----------------------------------------------")
+		print ("Version File:[%s]" % self.versionIni)
+		print ("-----------------------------------------------")
 
-			print ("Versione:" , self.versione)
-			print ("Versione con testo:" , self.versioneWithText)
+		print ("Latest RunDate:" , self.latestRunDate)
+		print ("Versione:" , self.versione)
+		print ("Versione con testo:" , self.versioneWithText)
 
-			if self.rilascioUfficiale:
-				print ("Rilascio Ufficiale:" , self.rilascioUfficiale)
-			else:
-				print ("Rilascio Non Ufficiale:" , self.rilascioNonUfficiale)
+		print ("-----------------------------------------------")
+		print ("Config File:[%s]" % self.configIni)
+		print ("-----------------------------------------------")
 
-			print ("Main Target=", self.main_Target)
-			print ("-----------------------------------------------")
+		print ("Main Target=", self.main_Target)
 
-			print ("Root Mount point:", self.rootMountPoint)
-			print ("Root Folder: ", self.rootFolder)
-			print ("Root Mount Point Common:", self.rootMountPointCommon)
-			print ("Batch Folder:" , self.batchFolder)
-			print ("-----------------------------------------------")
+		if self.rilascioUfficiale:
+			print ("Rilascio Ufficiale:" , self.rilascioUfficiale)
+		else:
+			print ("Rilascio Non Ufficiale:" , self.rilascioNonUfficiale)		
+		
+		print ("Root Mount point:", self.rootMountPoint)
+		print ("Root Mount Point Common:", self.rootMountPointCommon)
+		print ("Root Source Folder: ", self.rootFolder)
+		print ("Batch Folder:" , self.batchFolder)
+		print ("-----------------------------------------------")
 
-			print ("Project Path Overlord:", self.projectPathOVERLORD)
-			print ("Project Path Configuratore:", self.projectPathCONFIGURATORE)
-			print ("-----------------------------------------------")
+		print ("Project Path Overlord:", self.projectPathOVERLORD)
+		print ("Project Path Configuratore:", self.projectPathCONFIGURATORE)
 
-			print ("Path MsBuild:", self.pathMsbuild)
-			print ("Wix Targets Path:" , self.wixTargetsPath)
-			print ("WixCa Targets Path:" , self.wixcaTargetsPath)
+		print ("-----------------------------------------------")
+		print ("Local File:[%s]" % self.localIni)
+		print ("-----------------------------------------------")
+
+		print ("MsBuild Full Path:", self.pathMsbuild)
+		print ("Wix Targets Path:" , self.wixTargetsPath)
+		print ("WixCa Targets Path:" , self.wixcaTargetsPath)
+		print ("Nuget Path:" , self.nugetPath)

@@ -22,6 +22,7 @@
 import os, shlex, subprocess, re, datetime	
 		
 class VB6Builder:
+	
 	def __init__(self, vb6build=None):
 		if vb6build==None:
 			self.vb6build = r''

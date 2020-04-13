@@ -11,6 +11,7 @@ class MyException(Exception):
     pass
 
 class MyWindowClass(QtGui.QMainWindow, form_class):   
+    
     def __init__(self, parent=None):
         QtGui.QMainWindow.__init__(self, parent)
         self.setupUi(self)
