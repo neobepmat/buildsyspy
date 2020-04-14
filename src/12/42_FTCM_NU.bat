@@ -1,6 +1,6 @@
 REM =========================================
-REM 08-04-2020, test FTCM12-32, possibile risoluzione memory leak FTCM12-29
-SET VERSIONE=101.0.24.0
+REM 14-04-2020, Bugfix totali a zero su batch storico produzione
+SET VERSIONE=101.0.25.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=12
