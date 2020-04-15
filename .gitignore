@@ -4,3 +4,6 @@ artifacts/Dependencies
 Thumbs.db
 *.pyc
 venv/
+src/python-script/pylog/*
+
+!src/python-script/pylog/.gitkeep
