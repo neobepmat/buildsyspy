@@ -1,5 +1,5 @@
 REM =========================================
-REM 16-04-2020, Bug fix RoboQcs FTCM12-44 e RoboQcsUtility posizione di manutenzione
+REM 16-04-2020, Rilascio non ufficiale per Test Bottle in Test Management
 SET VERSIONE=101.0.27.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
