@@ -1,6 +1,6 @@
 REM =========================================
-REM 14-04-2020, Bugfix totali a zero su batch storico produzione
-SET VERSIONE=101.0.25.0
+REM 16-04-2020, Bugfix totali a zero su batch storico produzione
+SET VERSIONE=101.0.26.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=12
