@@ -1,13 +1,13 @@
 # coding=utf-8
 import os, shlex, subprocess, re, datetime
 import configparser
-import loggerFactory
+import logger.loggerFactory as thisLog
 
 class BuildSystemConfiguration:
 
 	def __init__(self, iniFileName):
 		self.iniFileName = iniFileName
-		self.log = loggerFactory.getLog(__name__)
+		self.log = thisLog.getLog(__name__)
 		self.__loadConfiguration(iniFileName)
 
 	def __loadConfiguration(self, iniFileName):
