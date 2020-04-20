@@ -1,5 +1,5 @@
 ﻿REM =========================================
-REM 09-04-2020: Rilascio ufficiale da Develop
+REM 20-04-2020: Rilascio ufficiale
 SET VERSIONE=1.5.0.0
 SET RILASCIO_UFFICIALE=1
 SET CONFIGURATION=Release
