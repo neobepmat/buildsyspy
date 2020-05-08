@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 04-05-2020: Rilascio ufficiale
-SET VERSIONE=1.10.0.0
+REM 08-05-2020: Rilascio ufficiale
+SET VERSIONE=1.10.1.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-master
 SET DO_GIT_CHECKOUT=0
 SET BRANCH_TO_CHECKOUT=master
