@@ -1,6 +1,6 @@
 REM =========================================
-REM 15-05-2020, Rilascio non ufficiale da branch FTCM12-32 Gestione Test
-SET VERSIONE=101.0.38.0
+REM 22-05-2020, Rilascio non ufficiale da branch FTCM12-32 Gestione Test
+SET VERSIONE=101.0.39.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=12
