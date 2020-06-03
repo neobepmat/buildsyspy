@@ -32,17 +32,18 @@ if not exist "%SETUP_SOURCE_FOLDER%\%RDP_FOLDER%" mkdir "%SETUP_SOURCE_FOLDER%\%
 
 ECHO Rimuovo files dal percorso %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%
 DEL %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%\*.* /Q
+FOR /d %%x in (%SETUP_SOURCE_FOLDER%\%RDP_FOLDER%\*) do @rd /s /q "%%x"
 
 ECHO Sto copiando i files nella destinazione: %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%
 
 rem config file for VNC and RDP
-COPY %OUTPUT_FOLDER%\Configuration\config.json %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%\Configuration\config.json
-COPY %OUTPUT_FOLDER%\RDPSetup\RDPTemplate.rdp %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%\RDPSetup\RDPTemplate.rdp
+XCOPY %OUTPUT_FOLDER%\Configuration\config.json %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%\Configuration\
+XCOPY %OUTPUT_FOLDER%\RDPSetup\RDPTemplate.rdp %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%\RDPSetup\
 
 rem default shortcut for RDPExecutable.exe with several values for MODE parameter
-COPY "%OUTPUT_FOLDER%\FT.RemoteDesktop.Executable.Shortcuts\FT.RemoteDesktop.Executable.exe - Shortcut RDP.lnk" "%SETUP_SOURCE_FOLDER%\%RDP_FOLDER%\FT.RemoteDesktop.Executable.Shortcuts\FT.RemoteDesktop.Executable.exe - Shortcut RDP.lnk"
-COPY "%OUTPUT_FOLDER%\FT.RemoteDesktop.Executable.Shortcuts\FT.RemoteDesktop.Executable.exe - Shortcut DEFAULT RDP.lnk" "%SETUP_SOURCE_FOLDER%\%RDP_FOLDER%\FT.RemoteDesktop.Executable.Shortcuts\FT.RemoteDesktop.Executable.exe - Shortcut DEFAULT RDP.lnk"
-COPY "%OUTPUT_FOLDER%\FT.RemoteDesktop.Executable.Shortcuts\FT.RemoteDesktop.Executable.exe - Shortcut STUB.lnk" "%SETUP_SOURCE_FOLDER%\%RDP_FOLDER%\FT.RemoteDesktop.Executable.Shortcuts\FT.RemoteDesktop.Executable.exe - Shortcut STUB.lnk"
+XCOPY "%OUTPUT_FOLDER%\FT.RemoteDesktop.Executable.Shortcuts\FT.RemoteDesktop.Executable.exe - Shortcut RDP.lnk" "%SETUP_SOURCE_FOLDER%\%RDP_FOLDER%\FT.RemoteDesktop.Executable.Shortcuts\"
+XCOPY "%OUTPUT_FOLDER%\FT.RemoteDesktop.Executable.Shortcuts\FT.RemoteDesktop.Executable.exe - Shortcut DEFAULT RDP.lnk" "%SETUP_SOURCE_FOLDER%\%RDP_FOLDER%\FT.RemoteDesktop.Executable.Shortcuts\"
+XCOPY "%OUTPUT_FOLDER%\FT.RemoteDesktop.Executable.Shortcuts\FT.RemoteDesktop.Executable.exe - Shortcut STUB.lnk" "%SETUP_SOURCE_FOLDER%\%RDP_FOLDER%\FT.RemoteDesktop.Executable.Shortcuts\"
 
 COPY %OUTPUT_FOLDER%\AxInterop.MSTSCLib.dll %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%
 COPY %OUTPUT_FOLDER%\FT.RemoteDesktop.dll %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%
@@ -73,8 +74,9 @@ COPY %OUTPUT_FOLDER%\FTSystem.Validators.dll %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%
 COPY %OUTPUT_FOLDER%\FTSystem.VirtualInput.dll %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%
 COPY %OUTPUT_FOLDER%\ICSharpCode.SharpZipLib.dll %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%
 COPY %OUTPUT_FOLDER%\Interop.MSTSCLib.dll %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%
-COPY %OUTPUT_FOLDER%\Newtonsoft.Json.dll %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%
-COPY %OUTPUT_FOLDER%\Newtonsoft.Json.xml %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%
+rem do not copy NewtonSoft, this library is already suppplied by TDK12
+rem COPY %OUTPUT_FOLDER%\Newtonsoft.Json.dll %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%
+rem COPY %OUTPUT_FOLDER%\Newtonsoft.Json.xml %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%
 rem do not copy NLog, this library is already suppplied by TDK12
 rem COPY %OUTPUT_FOLDER%\NLog.dll %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%
 COPY %OUTPUT_FOLDER%\RemoteCore.Common.dll %SETUP_SOURCE_FOLDER%\%RDP_FOLDER%
