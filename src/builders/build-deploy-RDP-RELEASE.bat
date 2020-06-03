@@ -26,7 +26,7 @@ ECHO Sto effettuando il restore dei pacchetti Nuget
 
 ECHO Sto eseguendo i target Clean e Rebuild della soluzione
 
-"%PATH_MSBUILD%" "%SOLUTION_FOLDER%" /target:Clean,Rebuild /property:Configuration=Release /p:Platform=x86  || SET BUILD_ERROR=1
+"%PATH_MSBUILD%" "%SOLUTION_FOLDER%" /target:Clean,Rebuild /property:Configuration=Release /p:Platform=x86  /p:OutputPath="%OUTPUT_FOLDER%" || SET BUILD_ERROR=1
 
 if not exist "%SETUP_SOURCE_FOLDER%\%RDP_FOLDER%" mkdir "%SETUP_SOURCE_FOLDER%\%RDP_FOLDER%"
 
