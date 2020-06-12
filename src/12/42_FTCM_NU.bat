@@ -1,6 +1,6 @@
 REM =========================================
-REM 03-06-2020, rilascio con FTSystem.RDP integrazione VNC, branch FTCM12-52
-SET VERSIONE=101.0.44.0
+REM 12-06-2020, rilascio con FTSystem.RDP integrazione VNC, branch FTCM12-52
+SET VERSIONE=101.0.45.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=12
