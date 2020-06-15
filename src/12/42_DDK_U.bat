@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 20-04-2020: Rilascio ufficiale
-SET VERSIONE=1.5.0.0
+REM 15-06-2020: Rilascio ufficiale
+SET VERSIONE=1.6.0.0
 SET RILASCIO_UFFICIALE=1
 SET CONFIGURATION=Release
 REM =========================================
