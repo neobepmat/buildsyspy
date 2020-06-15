@@ -66,5 +66,9 @@ copy "%FTCM_FOLDER%\System.Data.SQLite.Linq.dll" "%DEPENDENCIES_FOLDER%"
 xcopy "%FTCM_FOLDER%\x86\*" "%DEPENDENCIES_FOLDER%\X86\" /Y /f
 xcopy "%FTCM_FOLDER%\x64\*" "%DEPENDENCIES_FOLDER%\X64\" /Y /f
 
+copy "%FTCM_FOLDER%\FTSystem.AVBOS.CommunicationFramework.dll" "%DEPENDENCIES_FOLDER%"
+copy "%FTCM_FOLDER%\AntaresVision.OEM.Communication.dll" "%DEPENDENCIES_FOLDER%"
+copy "%FTCM_FOLDER%\AntaresVision.OEM.Communication.XmlSerializers.dll" "%DEPENDENCIES_FOLDER%"
+
 rem copia di Redbus
 copy "%FTCM_FOLDER%\Redbus.dll" "%DEPENDENCIES_FOLDER%"
