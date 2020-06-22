@@ -10,7 +10,7 @@ SET SLN_TDK=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\tdk12\FTSystem.ControlsManager.
 SET PRJ_VB6BRIDGE=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\tdk12\FT.CM.VB6Bridge\FT.CM.VB6Bridge.csproj
 
 REM restoring nuget packages
-"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SLN_TDK%"  -username nonameuser -password T-HUBB4eb6ycLd2ra0c0AlbBNX4JjlPpXP95E
+"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SLN_TDK%"
 
 REM CLEAN TDK
 

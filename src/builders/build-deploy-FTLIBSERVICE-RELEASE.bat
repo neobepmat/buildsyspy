@@ -23,7 +23,7 @@ ECHO percorso di MSBUILD: %PATH_MSBUILD%
 
 ECHO Sto effettuando il restore dei pacchetti Nuget
 
-"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SOLUTION_FOLDER%" -SolutionDirectory "%SOLUTION_FOLDER_NUGET%" -username nonameuser -password T-HUBB4eb6ycLd2ra0c0AlbBNX4JjlPpXP95E
+"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SOLUTION_FOLDER%" -SolutionDirectory "%SOLUTION_FOLDER_NUGET%"
 
 ECHO Sto eseguendo i target Clean e Rebuild della soluzione
 
