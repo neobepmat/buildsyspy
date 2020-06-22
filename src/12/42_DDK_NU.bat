@@ -1,6 +1,6 @@
 ﻿REM =========================================
-REM 22-05-2020, rilascio interno per test FTCM12-55 Gestione U1021 4.23, EX700MB 1.17 e storico per U1021 BARCODE e VACUUM_PRESSURE
-SET VERSIONE=101.0.15.0
+REM 22-06-2020, rilascio interno per BOS, branch FTCM2-10-develop
+SET VERSIONE=101.0.18.0
 SET RILASCIO_UFFICIALE=0
 SET CONFIGURATION=Release
 REM =========================================
