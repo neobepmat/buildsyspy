@@ -1,6 +1,6 @@
 REM =========================================
-REM 15-06-2020, Rilascio non ufficiale da branch FTCM12-10-BOS-Develop
-SET VERSIONE=101.0.46.0
+REM 22-06-2020, Rilascio non ufficiale da branch FTCM12-10-BOS-Develop
+SET VERSIONE=101.0.47.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=12
