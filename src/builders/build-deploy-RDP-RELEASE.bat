@@ -22,7 +22,12 @@ ECHO percorso di MSBUILD: %PATH_MSBUILD%
 
 ECHO Sto effettuando il restore dei pacchetti Nuget
 
-"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SOLUTION_FOLDER%"
+"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SOLUTION_FOLDER%" -ConfigFile "%BATCH_FOLDER_VERSIONE%\bin\%NUGET-FILENAME%"
+
+IF NOT %ERRORLEVEL% == 0 (
+	SET BUILD_ERROR = 1
+	GOTO END
+)
 
 ECHO Sto eseguendo i target Clean e Rebuild della soluzione
 

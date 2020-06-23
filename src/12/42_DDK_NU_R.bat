@@ -38,6 +38,8 @@ IF %DO_GIT_CHECKOUT% == 1 (
 	call "%BATCH_FOLDER%\git-script\GIT-CHECKOUT.bat" %GIT_ROOT% %BRANCH_TO_CHECKOUT% >> %LOG_FILE% 2>%LOG_FILE_ERR%
 )
 
+CALL "%BATCH_FOLDER%\common\42_init.BAT"
+
 CALL "%BATCH_FOLDER%\common\42_DDK.BAT"
 
 pause

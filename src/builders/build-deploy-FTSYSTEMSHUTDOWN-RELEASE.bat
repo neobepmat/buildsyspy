@@ -22,7 +22,12 @@ SET OUTPUT_FOLDER=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\FTSystem.ShutDownP
 ECHO Sto generando la build in RELEASE del pacchetto FTSystem.Shutdown
 ECHO percorso di MSBUILD: %PATH_MSBUILD%
 
-"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SOLUTION_FOLDER%"
+"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SOLUTION_FOLDER%" -ConfigFile "%BATCH_FOLDER_VERSIONE%\bin\%NUGET-FILENAME%"
+
+IF NOT %ERRORLEVEL% == 0 (
+	SET BUILD_ERROR = 1
+	GOTO END
+)
 
 "%PATH_MSBUILD%" "%SOLUTION_FOLDER%" /target:Clean,Rebuild /p:OutDir="%OUTPUT_FOLDER%";Configuration=Release;Platform=x86  || SET BUILD_ERROR=1
 

@@ -13,6 +13,11 @@ rem ------------------------------------------------------------------------
 
 SET SLN_DEVICEDRIVER=%BATCH_ROOT_MOUNTPOINT_COMMON%\bitbucket-ft\ddk12\TheDarkKnightDeviceDriver.sln
 
-"%BATCH_FOLDER%\bin\nuget.exe" restore "%SLN_DEVICEDRIVER%"
+"%BATCH_FOLDER%\bin\nuget.exe" restore "%SLN_DEVICEDRIVER%" -ConfigFile "%BATCH_FOLDER_VERSIONE%\bin\%NUGET-FILENAME%"
+
+IF NOT %ERRORLEVEL% == 0 (
+	SET BUILD_ERROR = 1
+	GOTO END
+)
 
 "%PATH_MSBUILD%" "%SLN_DEVICEDRIVER%" /P:CONFIGURATION=%CONFIGURATION_INTERNAL% /T:Clean,Rebuild /P:PLATFORM=x86  || SET BUILD_ERROR=1

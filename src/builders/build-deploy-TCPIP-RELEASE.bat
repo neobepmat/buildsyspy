@@ -25,7 +25,12 @@ ECHO ----------------------- Versione 11.10.x.x --------------------------------
 ECHO Sto generando la build in RELEASE del pacchetto FTSystem.Communication.FTCMMessageDispatcher
 ECHO percorso di MSBUILD: %MSBUILD_FOLDER%
 
-"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SOLUTION_FOLDER%"
+"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SOLUTION_FOLDER%" -ConfigFile "%BATCH_FOLDER_VERSIONE%\bin\%NUGET-FILENAME%"
+
+IF NOT %ERRORLEVEL% == 0 (
+	SET BUILD_ERROR = 1
+	GOTO END
+)
 
 "%PATH_MSBUILD%" "%PROJECT_FOLDER%" /target:Clean,Rebuild /property:Configuration=Release /p:OutputPath="%OUTPUT_FOLDER%"  || SET BUILD_ERROR=1
 

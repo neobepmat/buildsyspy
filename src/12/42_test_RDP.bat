@@ -29,6 +29,8 @@ ECHO Inizializzazione dei files di log 1> %LOG_FILE% 2> %LOG_FILE_ERR%
 
 DEL /S C:\FTSystem\Bin\ /Q >> %LOG_FILE% 2>> %LOG_FILE_ERR%
 
+CALL "%BATCH_FOLDER%\common\42_init.BAT"
+
 call "%BATCH_FOLDER%\builders\build-deploy-RDP-RELEASE.bat" %ROOT_MOUNTPOINT% %ROOT_MOUNTPOINT_COMMON% "%PATH_MSBUILD%" >> %LOG_FILE% 2>> %LOG_FILE_ERR%
 
 NET USE %TEMP_DRIVE_LETTER% /DELETE
