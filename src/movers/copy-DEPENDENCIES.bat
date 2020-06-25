@@ -28,7 +28,7 @@ copy "%FTCM_FOLDER%\Microsoft.Win32.TaskScheduler.dll" "%DEPENDENCIES_FOLDER%"
 REM copy "%FTCM_FOLDER%\Modbus.dll" "%DEPENDENCIES_FOLDER%"
 copy "%FTCM_FOLDER%\NModbus4.dll" "%DEPENDENCIES_FOLDER%"
 
-copy "%FTCM_FOLDER%\ObjectDumper.dll" "%DEPENDENCIES_FOLDER%"
+copy "%FTCM_FOLDER%\ObjectDumping.dll" "%DEPENDENCIES_FOLDER%"
 copy "%FTCM_FOLDER%\SmartPcsDll.dll" "%DEPENDENCIES_FOLDER%"
 copy "%FTCM_FOLDER%\SmartPcsDll.pdb" "%DEPENDENCIES_FOLDER%"
 copy "%FTCM_FOLDER%\System.ComponentModel.Composition.CodePlex.dll" "%DEPENDENCIES_FOLDER%"
