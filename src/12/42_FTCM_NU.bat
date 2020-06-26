@@ -1,6 +1,6 @@
 REM =========================================
-REM 24-06-2020, rilascio con integrazione nuovo pulsante calibrazione IE4000 (FTCM12-16)
-SET VERSIONE=101.0.46.0
+REM 26-06-2020, rilascio su branch FTCM12-65
+SET VERSIONE=101.0.48.0
 SET VERSIONE_WITH_TEXT=%VERSIONE%-develop
 SET RILASCIO_UFFICIALE=0
 SET MAIN_TARGET=12
