@@ -10,9 +10,14 @@ SET SLN_TDK=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\tdk12\FTSystem.ControlsManager.
 SET PRJ_VB6BRIDGE=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\tdk12\FT.CM.VB6Bridge\FT.CM.VB6Bridge.csproj
 
 REM restoring nuget packages
-"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SLN_TDK%"
+"%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SLN_TDK%" -ConfigFile "%BATCH_FOLDER_VERSIONE%\bin\%NUGET-FILENAME%"
 
-rem "%PATH_MSBUILD%" "%PRJ_VB6BRIDGE%" /P:CONFIGURATION=Release /T:Clean /P:PLATFORM=x86 || SET BUILD_ERROR=1
+IF NOT %ERRORLEVEL% == 0 (
+	SET BUILD_ERROR = 1
+	GOTO END
+)
+
+"%PATH_MSBUILD%" "%PRJ_VB6BRIDGE%" /P:CONFIGURATION=Release /T:Clean /P:PLATFORM=x86 || SET BUILD_ERROR=1
 
 "%PATH_MSBUILD%" "%SLN_TDK%" /P:CONFIGURATION=Release /T:Clean,Rebuild /P:PLATFORM=x86 /m:1 || SET BUILD_ERROR=1
 
