@@ -160,3 +160,127 @@ Target=Clean,Rebuild
 Platform=x86
 Configuration=Release
 ------------------------------------------------------------
+2020-07-05 09:48:51,589 - task.taskConfig - DEBUG - reading ini file [taskconfig/rdp-cleanRebuild-X86-Release.ini]
+2020-07-05 09:48:51,590 - task.taskConfig - DEBUG - --------------------------------------------------------------- Fields for file [taskconfig/rdp-cleanRebuild-X86-Release.ini]
+------------------------------------------------------------
+Description=FTSystem RDP build block
+Solution=FTSyste.RDP\TheDarkKnightDeviceDriver.sln
+Target=Clean,Rebuild
+Platform=x86
+Configuration=Release
+------------------------------------------------------------
+2020-07-05 09:48:51,590 - task.taskConfig - DEBUG - reading ini file [taskconfig/ftlibservice-cleanRebuild-X86-Release.ini]
+2020-07-05 09:48:51,590 - task.taskConfig - DEBUG - reading ini file [taskconfig/ftlibservice-cleanRebuild-X86-Release.ini]
+2020-07-05 09:48:51,591 - task.taskConfig - DEBUG - --------------------------------------------------------------- Fields for file [taskconfig/ftlibservice-cleanRebuild-X86-Release.ini]
+------------------------------------------------------------
+Description=FTLibService build block
+Solution=UWFLib\UWFLib\FTLibService\FTLibService.csproj
+Target=Clean,Rebuild
+Platform=x86
+Configuration=Release
+------------------------------------------------------------
+2020-07-05 09:48:51,591 - task.taskConfig - DEBUG - --------------------------------------------------------------- Fields for file [taskconfig/ftlibservice-cleanRebuild-X86-Release.ini]
+------------------------------------------------------------
+Description=FTLibService build block
+Solution=UWFLib\UWFLib\FTLibService\FTLibService.csproj
+Target=Clean,Rebuild
+Platform=x86
+Configuration=Release
+------------------------------------------------------------
+2020-07-05 09:48:51,591 - task.taskConfig - DEBUG - reading ini file [taskconfig/ftsystemshutdown-cleanRebuild-X86-Release.ini]
+2020-07-05 09:48:51,591 - task.taskConfig - DEBUG - reading ini file [taskconfig/ftsystemshutdown-cleanRebuild-X86-Release.ini]
+2020-07-05 09:48:51,591 - task.taskConfig - DEBUG - reading ini file [taskconfig/ftsystemshutdown-cleanRebuild-X86-Release.ini]
+2020-07-05 09:48:51,592 - task.taskConfig - DEBUG - --------------------------------------------------------------- Fields for file [taskconfig/ftsystemshutdown-cleanRebuild-X86-Release.ini]
+------------------------------------------------------------
+Description=The Dark Knight build block
+Solution=TheDarkKnightDeviceDriver\TheDarkKnightDeviceDriver.sln
+Target=Clean,Rebuild
+Platform=x86
+Configuration=Release
+------------------------------------------------------------
+2020-07-05 09:48:51,592 - task.taskConfig - DEBUG - --------------------------------------------------------------- Fields for file [taskconfig/ftsystemshutdown-cleanRebuild-X86-Release.ini]
+------------------------------------------------------------
+Description=The Dark Knight build block
+Solution=TheDarkKnightDeviceDriver\TheDarkKnightDeviceDriver.sln
+Target=Clean,Rebuild
+Platform=x86
+Configuration=Release
+------------------------------------------------------------
+2020-07-05 09:48:51,592 - task.taskConfig - DEBUG - --------------------------------------------------------------- Fields for file [taskconfig/ftsystemshutdown-cleanRebuild-X86-Release.ini]
+------------------------------------------------------------
+Description=The Dark Knight build block
+Solution=TheDarkKnightDeviceDriver\TheDarkKnightDeviceDriver.sln
+Target=Clean,Rebuild
+Platform=x86
+Configuration=Release
+------------------------------------------------------------
+2020-07-05 09:49:11,130 - __main__ - INFO - Python path: C:\ProgramData\Anaconda3\python.exe
+2020-07-05 09:49:11,130 - buildSystemConfiguration - DEBUG - Trying to open filename[versions/12-U-Version.ini]
+2020-07-05 09:49:11,131 - buildSystemConfiguration - DEBUG - Trying to open filename[config/12-U-config.ini]
+2020-07-05 09:49:11,131 - buildSystemConfiguration - DEBUG - Trying to open filename[config/12-local.ini]
+2020-07-05 15:24:18,031 - task.taskConfig - DEBUG - reading ini file [taskconfig/rdp-cleanRebuild-X86-Release.ini]
+2020-07-05 15:24:18,031 - task.taskConfig - DEBUG - --------------------------------------------------------------- Fields for file [taskconfig/rdp-cleanRebuild-X86-Release.ini]
+------------------------------------------------------------
+Description=FTSystem RDP build block
+Solution=FTSyste.RDP\TheDarkKnightDeviceDriver.sln
+Target=Clean,Rebuild
+Platform=x86
+Configuration=Release
+------------------------------------------------------------
+2020-07-05 15:24:18,032 - task.taskConfig - DEBUG - reading ini file [taskconfig/ftlibservice-cleanRebuild-X86-Release.ini]
+2020-07-05 15:24:18,032 - task.taskConfig - DEBUG - reading ini file [taskconfig/ftlibservice-cleanRebuild-X86-Release.ini]
+2020-07-05 15:24:18,032 - task.taskConfig - DEBUG - --------------------------------------------------------------- Fields for file [taskconfig/ftlibservice-cleanRebuild-X86-Release.ini]
+------------------------------------------------------------
+Description=FTLibService build block
+Solution=UWFLib\UWFLib\FTLibService\FTLibService.csproj
+Target=Clean,Rebuild
+Platform=x86
+Configuration=Release
+------------------------------------------------------------
+2020-07-05 15:24:18,032 - task.taskConfig - DEBUG - --------------------------------------------------------------- Fields for file [taskconfig/ftlibservice-cleanRebuild-X86-Release.ini]
+------------------------------------------------------------
+Description=FTLibService build block
+Solution=UWFLib\UWFLib\FTLibService\FTLibService.csproj
+Target=Clean,Rebuild
+Platform=x86
+Configuration=Release
+------------------------------------------------------------
+2020-07-05 15:24:18,033 - task.taskConfig - DEBUG - reading ini file [taskconfig/ftsystemshutdown-cleanRebuild-X86-Release.ini]
+2020-07-05 15:24:18,033 - task.taskConfig - DEBUG - reading ini file [taskconfig/ftsystemshutdown-cleanRebuild-X86-Release.ini]
+2020-07-05 15:24:18,033 - task.taskConfig - DEBUG - reading ini file [taskconfig/ftsystemshutdown-cleanRebuild-X86-Release.ini]
+2020-07-05 15:24:18,033 - task.taskConfig - DEBUG - --------------------------------------------------------------- Fields for file [taskconfig/ftsystemshutdown-cleanRebuild-X86-Release.ini]
+------------------------------------------------------------
+Description=The Dark Knight build block
+Solution=TheDarkKnightDeviceDriver\TheDarkKnightDeviceDriver.sln
+Target=Clean,Rebuild
+Platform=x86
+Configuration=Release
+------------------------------------------------------------
+2020-07-05 15:24:18,033 - task.taskConfig - DEBUG - --------------------------------------------------------------- Fields for file [taskconfig/ftsystemshutdown-cleanRebuild-X86-Release.ini]
+------------------------------------------------------------
+Description=The Dark Knight build block
+Solution=TheDarkKnightDeviceDriver\TheDarkKnightDeviceDriver.sln
+Target=Clean,Rebuild
+Platform=x86
+Configuration=Release
+------------------------------------------------------------
+2020-07-05 15:24:18,033 - task.taskConfig - DEBUG - --------------------------------------------------------------- Fields for file [taskconfig/ftsystemshutdown-cleanRebuild-X86-Release.ini]
+------------------------------------------------------------
+Description=The Dark Knight build block
+Solution=TheDarkKnightDeviceDriver\TheDarkKnightDeviceDriver.sln
+Target=Clean,Rebuild
+Platform=x86
+Configuration=Release
+------------------------------------------------------------
+2020-07-05 15:26:31,409 - __main__ - INFO - Python path: C:\git\bitbucket-ft\buildsystem\venv\Scripts\python.exe
+2020-07-05 15:26:31,409 - buildSystemConfiguration - DEBUG - Trying to open filename[versions/12-U-Version.ini]
+2020-07-05 15:26:31,410 - buildSystemConfiguration - DEBUG - Trying to open filename[config/12-U-config.ini]
+2020-07-05 15:26:31,411 - buildSystemConfiguration - DEBUG - Trying to open filename[config/12-local.ini]
+2020-07-05 15:59:14,005 - __main__ - INFO - Python path: C:\git\bitbucket-ft\buildsystem\venv\Scripts\python.exe
+2020-07-05 15:59:14,006 - buildSystemConfiguration - DEBUG - Trying to open filename[versions/12-U-Version.ini]
+2020-07-05 15:59:14,006 - buildSystemConfiguration - DEBUG - Trying to open filename[config/12-U-config.ini]
+2020-07-05 15:59:14,007 - buildSystemConfiguration - DEBUG - -----------------------------------------------
+2020-07-05 15:59:14,007 - buildSystemConfiguration - DEBUG - FILE config/12-U-config.ini NOT FOUND!
+2020-07-05 15:59:14,007 - buildSystemConfiguration - DEBUG - -----------------------------------------------
+2020-07-05 16:00:13,514 - __main__ - INFO - Python path: C:\git\bitbucket-ft\buildsystem\venv\Scripts\python.exe
+2020-07-05 16:00:13,514 - buildSystemConfiguration - DEBUG - Trying to open filename[config-build/12-u-r.ini]

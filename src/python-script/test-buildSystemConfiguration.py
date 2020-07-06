@@ -14,6 +14,6 @@ log.info("Python path: %s", thisInterpeter)
 
 # print ("--------------------------------------")
 
-t = buildSystemConfiguration.BuildSystemConfiguration('versions/12-U-Version.ini')
+t = buildSystemConfiguration.BuildSystemConfiguration('config-build/12-u-r.ini')
 # t.Read_Ini()
 t.print_func()
