@@ -3,8 +3,13 @@ SET MSG_NEW_TAG=new version
 @echo --------------------->> "%EXT_LOG_FILE%" 2>>"%EXT_LOG_FILE_ERR%"
 @echo Checking out %CURRENT_REPO% >> "%EXT_LOG_FILE%" 2>>"%EXT_LOG_FILE_ERR%"
 @echo --------------------->> "%EXT_LOG_FILE%" 2>>"%EXT_LOG_FILE_ERR%"
-call "%GIT_EXE%" -C %CURRENT_FOLDER% reset --hard >> "%EXT_LOG_FILE%" 2>>"%EXT_LOG_FILE_ERR%"
-call "%GIT_EXE%" -C %CURRENT_FOLDER% checkout %BRANCH_TO_TAG_INTERNAL% >> "%EXT_LOG_FILE%" 2>>"%EXT_LOG_FILE_ERR%"
+
+IF %DEMO% == 0 (
+	call "%GIT_EXE%" -C %CURRENT_FOLDER% reset --hard >> "%EXT_LOG_FILE%" 2>>"%EXT_LOG_FILE_ERR%"
+
+	call "%GIT_EXE%" -C %CURRENT_FOLDER% checkout %BRANCH_TO_TAG_INTERNAL% >> "%EXT_LOG_FILE%" 2>>"%EXT_LOG_FILE_ERR%"
+)
+
 @ECHO Now Tagging >> "%EXT_LOG_FILE%" 2>>"%EXT_LOG_FILE_ERR%"
 
 IF %DEMO% == 1 (
