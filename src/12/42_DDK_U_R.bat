@@ -1,6 +1,6 @@
 ﻿REM =========================================
 REM 08-01-2020: init
-SET VERSIONE=1.0.0.0-master
+SET VERSIONE=1.6.0.0
 SET DO_GIT_CHECKOUT=1
 SET RILASCIO_UFFICIALE=1
 SET BRANCH_TO_CHECKOUT=master
@@ -22,7 +22,7 @@ MKDIR "%BATCH_FOLDER%\log"
 SET LOG_FILE=%BATCH_FOLDER%\log\SETUP_DDK_12_master.LOG
 SET LOG_FILE_ERR=%BATCH_FOLDER%\log\SETUP_DDK_ERR_12_master.LOG
 
-SET DEVICE_DRIVER_VERSION_WITH_TEXT=%VERSIONE%
+SET DEVICE_DRIVER_VERSION_WITH_TEXT=%VERSIONE%-master
 SET PATH_MSBUILD=C:\Program Files (x86)\Microsoft Visual Studio\2017\BuildTools\MSBuild\15.0\Bin\MSBUILD.EXE
 SET WIX_TARGETSPATH=C:\Program Files (x86)\MSBuild\Microsoft\WiX\v3.x\wix.targets
 SET WIXCA_TARGETSPATH=C:\Program Files (x86)\MSBuild\Microsoft\WiX\v3.x\wix.ca.targets
