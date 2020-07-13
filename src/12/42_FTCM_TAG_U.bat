@@ -1,5 +1,5 @@
 REM ----------------------------------------------------------------
-SET VERSIONE=1.11.0.0
+SET VERSIONE=1.13.0.0
 REM ----------------------------------------------------------------
 
 REM Imposta il TAG definito in questo file sui repository MASTER della versione 11.10
