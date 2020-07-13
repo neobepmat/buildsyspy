@@ -6,7 +6,7 @@ SET EL_VERSIONE=1.1.0.0
 REM =========================================
 
 SET BATCH_ROOT_MOUNTPOINT=C:\git-12
-SET BATCH_ROOT_MOUNTPOINT_COMMON=C:\git-common
+SET BATCH_ROOT_MOUNTPOINT_COMMON=C:\git-12
 rem -------------------------------------------
 
 SET BATCH_FOLDER_VERSIONE=%BATCH_ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem
@@ -32,9 +32,9 @@ MKDIR "%OUTPUT_PATH%"
 
 ECHO Sto effettuando la pull del repository in Git
 
-SET GIT_EXE=C:\Program Files (x86)\Git\cmd\git.exe
+SET GIT_EXE=C:\Program Files\Git\cmd\git.exe
 set DRIVE_GIT_ROOT=C:
-set GIT-ROOT-COMMON=c:\git-common
+set GIT-ROOT-COMMON=c:\git-12
 
 echo Starting Git Checkout...
 

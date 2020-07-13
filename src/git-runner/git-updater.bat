@@ -8,7 +8,7 @@ IF NOT [%GIT_ROOT%] == [] SET GIT_ROOT_INTERNAL=%GIT_ROOT%
 
 rem ------------------------------------------------------------------------
 
-SET GIT_EXE=C:\Program Files (x86)\Git\cmd\git.exe
+SET GIT_EXE=C:\Program Files\Git\cmd\git.exe
 SET GIT_FOLDER=%GIT_ROOT_INTERNAL%/BuildSystem
 
 @echo Starting Git Checkout...

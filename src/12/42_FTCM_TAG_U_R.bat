@@ -3,7 +3,7 @@ REM IMPORTANTE: questi script non effettuano alcuna PULL e
 REM debbono essere utilizzati dopo aver eseguito un setup ufficiale con successo
 
 SET GIT-ROOT=C:\GIT-12
-set GIT-ROOT-COMMON=c:\git-common
+set GIT-ROOT-COMMON=c:\GIT-12
 :: Warning! Always use the slash forward within the version number - the backslash is not allowed
 SET TAG=v12/1.0.0.0
 :: used to start the task as simulated

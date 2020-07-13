@@ -26,7 +26,7 @@ EXIT /B
 @ECHO The user has chosen YES : the batch file will continue >> "%EXT_LOG_FILE%" 2>>"%EXT_LOG_FILE_ERR%"
 PAUSE
 
-SET GIT_EXE=C:\Program Files (x86)\Git\cmd\git.exe
+SET GIT_EXE=C:\Program Files\Git\cmd\git.exe
 
 SET CURRENT_REPO=FAKE REPOSITORY
 SET CURRENT_FOLDER=%GIT-ROOT%\FakeRepository

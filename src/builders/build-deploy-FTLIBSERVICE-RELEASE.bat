@@ -25,9 +25,9 @@ ECHO Sto effettuando il restore dei pacchetti Nuget
 
 "%BATCH_FOLDER_VERSIONE%\bin\nuget.exe" restore "%SOLUTION_FOLDER%" -SolutionDirectory "%SOLUTION_FOLDER_NUGET%" -ConfigFile "%BATCH_FOLDER_VERSIONE%\bin\%NUGET-FILENAME%"
 
-IF NOT %ERRORLEVEL% == 0 (
-	SET BUILD_ERROR = 1
-	GOTO END
+IF %ERRORLEVEL% NEQ 0 (
+	SET BUILD_ERROR= 1
+	EXIT /B
 )
 
 ECHO Sto eseguendo i target Clean e Rebuild della soluzione
