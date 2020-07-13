@@ -1,5 +1,5 @@
 REM Lista dei vari repo con versioni per BuildSystem
-SET SCRIPT_UPDATER=git-updater.bat
+SET SCRIPT_UPDATER=c:\git\buildsystem\src\git-runner\git-updater.bat
 
 SET GIT_EXE=C:\Program Files\Git\cmd\git.exe
 
