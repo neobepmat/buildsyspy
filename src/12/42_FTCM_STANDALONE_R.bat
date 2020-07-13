@@ -2,11 +2,11 @@ REM =========================================
 REM script di esecuzione in modalità standalone di TDK in modalità DESIGN su PLATFORM x86
 REM =========================================
 
-SET ROOT_MOUNTPOINT=C:\GIT-12-beta
+SET ROOT_MOUNTPOINT=C:\GIT-12
 
 SET ROOT_FOLDER=%ROOT_MOUNTPOINT%\bitbucket-ft\BuildSystem
 SET BATCH_FOLDER=%ROOT_FOLDER%\src
-SET ROOT_MOUNTPOINT_COMMON=C:\GIT-12-beta
+SET ROOT_MOUNTPOINT_COMMON=C:\GIT-12
 
 MKDIR "%BATCH_FOLDER%\log"
 
