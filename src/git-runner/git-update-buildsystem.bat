@@ -5,8 +5,6 @@ SET GIT_EXE=C:\Program Files\Git\cmd\git.exe
 SET BRANCH_TO_CHECKOUT=develop
 SET GIT_RUNNER=%BUILDSYSTEM_FOLDER%/src/git-runner/git-runner.bat
 
-call "c:\Program Files\Git\cmd\start-ssh-agent.cmd"
-
 cd %BUILDSYSTEM_FOLDER%
 
 call "%GIT_EXE%" checkout %BRANCH_TO_CHECKOUT%

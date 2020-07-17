@@ -16,8 +16,6 @@ rem ------------------------------------------------------------------------
 SET GIT_EXE=C:\Program Files\Git\cmd\git.exe
 set DRIVE_GIT_ROOT=C:
 
-call "c:\Program Files\Git\cmd\start-ssh-agent.cmd"
-
 %DRIVE_GIT_ROOT%
 cd /
 
