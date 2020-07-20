@@ -8,8 +8,8 @@ REM --------------------------------
 REM WARNING! ENABLE ONE FEED ONLY!!!
 REM --------------------------------
 
-SET LOCAL=1
-SET FEEDZ=0
+SET LOCAL=0
+SET FEEDZ=1
 SET FEEDZ_REMOTE=0
 
 IF %1 == LOCAL (
