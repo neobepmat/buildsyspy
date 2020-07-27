@@ -1,7 +1,7 @@
 # launcher per test purposes
 # from logFactory import logger
 import logger.loggerFactory as thisLog
-import task.taskConfig as tf
+import modules.task.taskConfig as tf
 
 tLog = thisLog.getLog(__name__)
 
