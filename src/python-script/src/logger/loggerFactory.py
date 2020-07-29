@@ -1,12 +1,19 @@
 import logging
+import os
 
-internalLogFilename = '../pylog/mylog.log'
+dirname = os.path.dirname(__file__)
+internalLogFilename = os.path.join(dirname, '../../pylog/mylog.log')
+
 internalClassName = 'NullClass'
 
-def getLog(className=None, logFilename=None, logLevel=logging.DEBUG):
+def getLog(className=None, logFilename=None, append=True):
 
     if className is None:
         className = internalClassName
+
+    if append is not True:
+        if os.path.exists(internalLogFilename):
+            os.remove(internalLogFilename)
 
     logger = logging.getLogger(className)
     logger.setLevel(logging.DEBUG)
