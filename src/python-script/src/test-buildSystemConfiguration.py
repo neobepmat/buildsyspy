@@ -1,6 +1,6 @@
 # launcher per test purposes
 # from logFactory import logger
-import logger.loggerFactory as thisLog
+from logger import loggerFactory as thisLog
 import buildSystemConfiguration
 import sys
 
@@ -14,6 +14,6 @@ log.info("Python path: %s", thisInterpeter)
 
 # print ("--------------------------------------")
 
-t = buildSystemConfiguration.BuildSystemConfiguration('config-build/12-u-r.ini')
+t = buildSystemConfiguration.BuildSystemConfiguration('config-build/12-HMI-U-R.ini')
 # t.Read_Ini()
 t.print_func()
