@@ -13,21 +13,21 @@ class BuildSystemConfiguration:
     def __loadConfiguration(self, iniFileName):
         retBool = self.__doIniExists(iniFileName)
 
-        if retBool == False:
+        if retBool is False:
             self.log.error("Error in ", __name__)
             exit(main())
 
         self.__read_versionIni(iniFileName)
 
         retBool = self.__doIniExists(self.configIni)
-        if retBool == False:
+        if retBool is False:
             self.log.error("Error in ", __name__)
             exit(main())
 
         self.__read_configIni(self.configIni)
 
         retBool = self.__doIniExists(self.localIni)
-        if retBool == False:
+        if retBool is False:
             self.log.error("Error in ", __name__)
             exit(main())
 
@@ -36,11 +36,11 @@ class BuildSystemConfiguration:
     def __doIniExists(self, iniFileName):
         self.log.debug("Trying to open filename[" + iniFileName + "]")
         self.fileEsiste = os.path.exists(iniFileName)
-        if self.fileEsiste == False:
+        if self.fileEsiste is False:
             self.log.debug("-----------------------------------------------")
             self.log.debug("FILE " + str(iniFileName) + " NOT FOUND!")
             self.log.debug("-----------------------------------------------")
-            return false
+            return False
 
     def __read_configIni(self, iniFileName):
         config = configparser.ConfigParser()
