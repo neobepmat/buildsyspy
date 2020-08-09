@@ -14,31 +14,31 @@ class BuildSystemConfiguration:
         retBool = self.__doIniExists(iniFileName)
 
         if retBool is False:
-            self.log.error("Error in ", __name__)
-            exit(main())
+            self.log.error("Error in [%s]", __name__)
+            return None
 
         self.__read_versionIni(iniFileName)
 
         retBool = self.__doIniExists(self.configIni)
         if retBool is False:
-            self.log.error("Error in ", __name__)
-            exit(main())
+            self.log.error("Error in [%s]", __name__)
+            return None
 
         self.__read_configIni(self.configIni)
 
         retBool = self.__doIniExists(self.localIni)
         if retBool is False:
-            self.log.error("Error in ", __name__)
-            exit(main())
+            self.log.error("Error in [%s]", __name__)
+            return None
 
         self.__read_localIni(self.localIni)
 
     def __doIniExists(self, iniFileName):
-        self.log.debug("Trying to open filename[" + iniFileName + "]")
+        self.log.debug("Trying to open filename[%s]", iniFileName)
         self.fileEsiste = os.path.exists(iniFileName)
         if self.fileEsiste is False:
             self.log.debug("-----------------------------------------------")
-            self.log.debug("FILE " + str(iniFileName) + " NOT FOUND!")
+            self.log.debug("FILE [%s] NOT FOUND!", iniFileName)
             self.log.debug("-----------------------------------------------")
             return False
 

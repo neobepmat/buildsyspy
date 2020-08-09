@@ -2,12 +2,14 @@ import configparser
 from logger import loggerFactory as thisLog
 from os import path
 
-class TaskConfig():
+class TaskItem():
 
     # True if initialization is successful
     initOk = False
+    section = None
+    path = None
 
-    def __init__(self, filename):
+    def __init__(self, filename, section):
         self.log = thisLog.getLog(__name__)
 
         if path.exists(filename) is False:
@@ -16,13 +18,14 @@ class TaskConfig():
             return None
 
         self.initOk = True
+        self.section = section
 
         self.filename = filename
         self.__initFields
 
         self.log.debug("File exists:" + str(path.exists(filename)))
 
-        result = self.__readFields(self.filename)
+        result = self.__readFields(self.filename, section)
         if result is False:
             self.log.error('Error while reading fields for file [%s]', self.filename)
 
@@ -30,13 +33,11 @@ class TaskConfig():
         if self.initOk is False:
             return None
 
-        self.description = None
-        self.solution = None
+        self.enabled = None
+        self.path = None
         self.target = []
-        self.platform = None
-        self.configuration = None
 
-    def __readFields(self, filename):
+    def __readFields(self, filename, section):
         if self.initOk is False:
             return None
 
@@ -44,12 +45,10 @@ class TaskConfig():
         self.log.debug('reading ini file [%s]', filename)
         config.read(filename)
 
-        self.description = config['DEFAULT']['DESCRIPTION']
-        self.solution = config['DEFAULT']['SOLUTION']
-        target = config['DEFAULT']['TARGET']
+        self.enabled = config[section]['ENABLED']
+        self.path = config[section]['PATH']
+        target = config[section]['TARGET']
         self.target = target.split()
-        self.platform = config['DEFAULT']['PLATFORM']
-        self.configuration = config['DEFAULT']['CONFIGURATION']
         return True
 
     def print_Fields(self):
@@ -57,13 +56,11 @@ class TaskConfig():
             return None
 
         tmpStr = "-------------------------------------------------------------"
-        tmpStr += ("-- Fields for file [%s]" % self.filename) + '\n'
+        tmpStr += "-- Tasklist Fields for file {0} - section {1} \n".format(self.filename, self.section)
         tmpStr += "------------------------------------------------------------" + '\n'
-        tmpStr += "Description=" + self.description + '\n'
-        tmpStr += "Solution=" + self.solution + '\n'
-        tmpStr += "Target=" + '-'.join(self.target) + '\n'
-        tmpStr += "Platform=" + self.platform + '\n'
-        tmpStr += "Configuration=" + self.configuration + '\n'
+        tmpStr += "Enabled={0} \n".format(self.enabled)
+        tmpStr += "Path={0} \n".format(self.path)
+        tmpStr += "Target={0} \n".format(self.target)
         tmpStr += "------------------------------------------------------------"
         print(tmpStr)
         self.log.debug(tmpStr)

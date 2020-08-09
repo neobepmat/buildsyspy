@@ -14,6 +14,9 @@ log.info("Python path: %s", thisInterpeter)
 
 # print ("--------------------------------------")
 
-t = buildSystemConfiguration.BuildSystemConfiguration('config-build/12-HMI-U-R.ini')
+mainFolder = 'c:/git/bitbucket-ft/buildsystem/src/python-script/config-build'
+filename = mainFolder + '/12-HMI-U-R.ini'
+
+t = buildSystemConfiguration.BuildSystemConfiguration(filename)
 # t.Read_Ini()
 t.print_func()
